@@ -110,7 +110,7 @@ input[type=number]::-webkit-outer-spin-button {
   <div class="value-button" id="decrease" onclick="decreaseValue(document.getElementById('kidsnumber'))" value="Decrease Value">-</div>
   <input type="number" id="kidsnumber" value="0" />
   <div class="value-button" id="increase" onclick="increaseValue(document.getElementById('kidsnumber'))" value="Increase Value">+</div>
-
+		  <div id="totalPrice">TOTAL TO PAY</div>
 	  </form>
 	  <form>
           <div class="form-group">
@@ -140,6 +140,8 @@ function increaseValue(number) {
   value = isNaN(value) ? 0 : value;
   value++;
   number.value = value;
+    document.getElementById('totalPrice').innerHTML =
+                                      "Total Price For Cake £"+getTotal();	
 }
 
 function decreaseValue(number) {
@@ -149,5 +151,13 @@ function decreaseValue(number) {
   value--;
  number.value = value;
 }
+	function getTotal()
+{
+    //Here we get the total price by calling our function
+    //Each function returns a number so by calling them we add the values they return together
+    ( document.getElementById('adultnumber').value * 15 ) + ( document.getElementById('kidsnumber').value * 10 );
+ 
+}
+
 	   </script>
 </html>
