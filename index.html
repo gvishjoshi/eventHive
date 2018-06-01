@@ -130,7 +130,7 @@ function increaseValue(number) {
   value++;
   number.value = value;
     document.getElementById('totalPrice').innerHTML =
-                                      "TOTAL TO PAY: £"+ getTotal(totalPrice);	
+                                      "TOTAL TO PAY: £"+ getTotal(document.getElementById('totalPrice'));	
 }
 
 function decreaseValue(number) {
