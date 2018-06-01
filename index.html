@@ -12,6 +12,26 @@
         		<li><a href="/blog">Blog</a></li>
     		</ul>
 		</nav>
+		<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
 		<div class="row">
   <div class="column"><img src="Desert.jpg" alt="Mountain View" style="width:25%;height:2%;"></div>
   <div class="column"><dl>
