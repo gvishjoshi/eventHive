@@ -139,15 +139,15 @@ function increaseValue(number) {
   var value = parseInt(number, 10);
   value = isNaN(value) ? 0 : value;
   value++;
-  document.getElementById('number').value = value;
+  number = value;
 }
 
-function decreaseValue() {
-  var value = parseInt(document.getElementById('number').value, 10);
+function decreaseValue(number) {
+  var value = parseInt(number, 10);
   value = isNaN(value) ? 0 : value;
   value < 1 ? value = 1 : '';
   value--;
-  document.getElementById('number').value = value;
+ number = value;
 }
 	   </script>
 </html>
