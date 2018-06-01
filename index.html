@@ -103,13 +103,13 @@ input[type=number]::-webkit-outer-spin-button {
 	  </style>
 	  <form>
 		  <div>ADULTS @£15</div>
-  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-  <input type="number" id="number" value="0" />
-  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+  <div class="value-button" id="decrease" onclick="decreaseValue(document.getElementById("adultnumber").value)" value="Decrease Value">-</div>
+  <input type="number" id="adultnumber" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue(document.getElementById("adultnumber").value)" value="Increase Value">+</div>
 		  <div>KIDS @£10</div>
-  <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-  <input type="number" id="number" value="0" />
-  <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+  <div class="value-button" id="decrease" onclick="decreaseValue(document.getElementById("kidsnumber").value)" value="Decrease Value">-</div>
+  <input type="number" id="kidsnumber" value="0" />
+  <div class="value-button" id="increase" onclick="increaseValue(document.getElementById("kidsnumber").value)" value="Increase Value">+</div>
 
 	  </form>
 	  <form>
@@ -136,7 +136,7 @@ input[type=number]::-webkit-outer-spin-button {
 	</body>
 <script>
 function increaseValue(number) {
-  var value = parseInt(document.getElementById('number').value, 10);
+  var value = parseInt(number, 10);
   value = isNaN(value) ? 0 : value;
   value++;
   document.getElementById('number').value = value;
