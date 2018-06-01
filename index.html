@@ -97,6 +97,7 @@ input[type=number]::-webkit-outer-spin-button {
 	  <div>
 		  <dt><h1><b>Tickets</h1></b></dt>
 	  </div>
+	  <div>
 	  <form>
 		  <div>ADULTS @£15</div>
   <div class="value-button" id="decrease" onclick="decreaseValue(document.getElementById('adultnumber'))" value="Decrease Value">-</div>
@@ -107,8 +108,10 @@ input[type=number]::-webkit-outer-spin-button {
   <input type="number" id="kidsnumber" value="0"  max="5"/>
   <div class="value-button" id="increase" onclick="increaseValue(document.getElementById('kidsnumber'))" value="Increase Value">+</div>
 		  <div> <label id="totalPrice"/><b>TOTAL TO PAY:</b> £<label id ="cakePrice"/></div>
+		  <div>
 		  <div> <label id="email">Email</label><input id="emailid" type="email"/></div>
 		  <button>Submit Request</button>
+		  </div>
 	  </form>
       </div>
 </div>
