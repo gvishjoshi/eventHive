@@ -129,7 +129,7 @@ function increaseValue(number) {
   value = isNaN(value) ? 0 : value;
   value++;
   number.value = value;
-    getTotal(document.getElementById('totalPrice'));
+    getTotal();
 }
 
 function decreaseValue(number) {
@@ -138,7 +138,7 @@ function decreaseValue(number) {
   value < 1 ? value = 1 : '';
   value--;
  number.value = value;
-	getTotal(document.getElementById('totalPrice'));
+	getTotal();
 }
 	function getTotal(totalPrice)
 {
