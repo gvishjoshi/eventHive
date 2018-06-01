@@ -129,8 +129,7 @@ function increaseValue(number) {
   value = isNaN(value) ? 0 : value;
   value++;
   number.value = value;
-    document.getElementById('totalPrice').innerHTML =
-                                      "TOTAL TO PAY: £"+ getTotal(document.getElementById('totalPrice'));	
+    getTotal(document.getElementById('totalPrice'));
 }
 
 function decreaseValue(number) {
@@ -139,13 +138,15 @@ function decreaseValue(number) {
   value < 1 ? value = 1 : '';
   value--;
  number.value = value;
+	getTotal(document.getElementById('totalPrice'));
 }
 	function getTotal(totalPrice)
 {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
     totalPrice.value = totalPrice.value + ( document.getElementById('adultnumber').value * 15 ) + ( document.getElementById('kidsnumber').value * 10 );
- 
+ document.getElementById('totalPrice').innerHTML =
+                                      "TOTAL TO PAY: £"+ document.getElementById('totalPrice');	
 }
 
 	
