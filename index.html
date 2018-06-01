@@ -130,7 +130,7 @@ function increaseValue(number) {
   value++;
   number.value = value;
     document.getElementById('totalPrice').innerHTML =
-                                      "Total Price For Cake £"+getTotal();	
+                                      "TOTAL TO PAY: £"+getTotal(totalPrice);	
 }
 
 function decreaseValue(number) {
@@ -140,11 +140,11 @@ function decreaseValue(number) {
   value--;
  number.value = value;
 }
-	function getTotal()
+	function getTotal(totalPrice)
 {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
-    ( document.getElementById('adultnumber').value * 15 ) + ( document.getElementById('kidsnumber').value * 10 );
+    totalPrice.value = totalPrice. value + ( document.getElementById('adultnumber').value * 15 ) + ( document.getElementById('kidsnumber').value * 10 );
  
 }
 
