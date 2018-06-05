@@ -78,9 +78,10 @@ input#number {
   width: 40px;
   height: 40px;
 }
-.img {
+.column img {
     width: auto;
     height: auto;
+	vertical-align: middle;
 }
 
 input[type=number]::-webkit-inner-spin-button,
