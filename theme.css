@@ -11,7 +11,7 @@
 }
 .formbuttoncolumn {
     float: center;
-    width: 10%;
+    width: 100%;
     padding: 10px;
 }
 			
@@ -35,7 +35,7 @@
   display: inline-block;
   border: 1px solid #ddd;
   margin: 0px;
-  width: 40px;
+  width: 10px;
   height: 20px;
   text-align: center;
   vertical-align: top;
