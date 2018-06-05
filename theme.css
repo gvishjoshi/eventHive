@@ -6,7 +6,12 @@
 }
 .formcolumn {
     float: left;
-    width: 8%;
+    width: 6%;
+    padding: 10px;
+}
+.formcolumnmid {
+    float: left;
+    width: 12%;
     padding: 10px;
 }
 .formbuttoncolumn {
