@@ -78,8 +78,7 @@ input#number {
   height: 40px;
 }
 .column img {
-	margin: 5px;
-    width: 100%;
+    width: 98%;
     height: auto;
 	vertical-align: middle;
 }
