@@ -35,7 +35,7 @@
 	background-color: #d1e0e0;
 
 }
-/* Clear floats after the columns */
+/* Clear floats after the columns test*/
 .row:after {
     content: "";
     display: table;
