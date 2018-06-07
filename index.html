@@ -43,8 +43,18 @@
 	  		</div>	
 			<div class="row">	
 				<div class="formcolumnmid"><b>To Pay: </div>
-				<div class="formcolumn">£<label id="cakePrice"/></b></div>
+				<div class="formcolumn"><label id="cakePrice"/></b></div>
 			</div>
+			<div class="row">					
+				<div class="formcolumn"><b>Email:</b>
+					<input type="text" maxlength="72" id="emailId"/>
+				</div>
+			</div>
+			<div class="row">		
+				<div class="formcolumn"><b>Full Name:</b>
+					<input type="text" maxlength="72" id="emailId"/>
+				</div>
+			</div>			
 		</form>	
 	</div>
 	<div class="column">
@@ -87,7 +97,7 @@ function decreaseValue(number) {
     //Each function returns a number so by calling them we add the values they return together
     var cakePrice = document.getElementById('adultnumber').value * 15  +  document.getElementById('kidsnumber').value * 10 ;
  document.getElementById('cakePrice').innerHTML =
-                                      cakePrice;	
+                                      "£"+cakePrice;	
 }
 
 	
