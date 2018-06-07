@@ -8,6 +8,8 @@
     float: left;
     width: 30%;
     height: 300px; /* Should be removed. Only for demonstration */
+ justify-content: center;
+  align-items: center;	
 }
 .formcolumn {
     float: left;
