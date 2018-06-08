@@ -2,8 +2,8 @@
 .container {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-    grid-template-rows: repeat(2, 75px);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(2, 150px);
 }
 .container > div > img {
     width: 100%;
