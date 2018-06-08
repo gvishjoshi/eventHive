@@ -1,9 +1,8 @@
 /* Create three equal columns that floats next to each other */
 .container {
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(6, 150px);
-    grid-template-rows: repeat(1, 150px);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 50px;
 }
 .container > div > img {
     width: 100%;
