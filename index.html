@@ -11,7 +11,7 @@
 				<img class="img" src="Desert.jpg" alt="Mountain View">
 	</div>
 	<div class="ticketcolumn">
-		<form name="tickets" method="POST" netlify>
+		<form name="tickets" onsubmit="return validateForm()"method="POST" netlify>
 			<div class="row">
 				<div class="formcolumn">
 					Adults
@@ -90,7 +90,15 @@
 </div>
 
 	</body>
+	
 <script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
 function increaseValue(number) {
   var value = parseInt(number.value, 10);
   value = isNaN(value) ? 0 : value;
