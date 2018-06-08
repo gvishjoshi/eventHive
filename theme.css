@@ -4,6 +4,9 @@
     width: 23%;
     height: 300px; /* Should be removed. Only for demonstration */
 }
+.mytext {
+    width: 20%;
+}
 @media screen and (max-width: 600px) {
     .column {
         width: 100%;
