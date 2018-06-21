@@ -1,4 +1,9 @@
 /* Create three equal columns that floats next to each other */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr, 1fr;
