@@ -12,6 +12,11 @@
     width: 35%;
     float: left;
 }
+.others {
+    width: 20%;
+    float: left;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr, 1fr;
