@@ -19,7 +19,7 @@
 }
 img {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   max-height: 100%;
   max-width: 100%;
 }
