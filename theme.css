@@ -44,3 +44,14 @@
 	.col { margin: 1% 0 1% 0%;}
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-height: 100%;
+  max-width: 100%;
+}
+.trick {
+  display: inline-block;
+  vertical-align: middle;
+  height: 150px;
+}
