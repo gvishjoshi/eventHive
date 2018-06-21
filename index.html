@@ -6,12 +6,12 @@
 		<h1>Welcome to EventHive</h1>
 	</head>
 	<body>
-<div class="container">		
+<div class="row">		
 <div>
 				<img class="img" src="Desert.jpg" alt="Mountain View">
 	</div>
 		<form name="tickets" netlify onsubmit="return validateForm()" method="POST" >
-			<div>
+			<div class="row">
 					Adults
 					<div class="value-button" id="decrease" onclick="decreaseValue(document.getElementById('adultnumber'))" value="Decrease Value">-</div>
 					<input type="tel" name="Adults" id="adultnumber" value="0" minlength="0" maxlength="2" size="2" width="30%">
