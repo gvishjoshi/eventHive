@@ -6,13 +6,10 @@
 		<h1>Welcome to EventHive</h1>
 	</head>
 	<body>	
-	<div class="section group">
-		<div class="col span_1_of_4">
-			<img src="Desert.jpg" alt="Mountain View">	
-		</div>
-		<div class="section group">
-			<div class="col span_1_of_4">
-				<form name="tickets" netlify onsubmit="return validateForm()" method="POST" >
+<div class="flex-grid">
+  <div class="col"><img src="Desert.jpg" alt="Mountain View"></div>
+  <div class="col">
+	  				<form name="tickets" netlify onsubmit="return validateForm()" method="POST" >
 		<div>
 					Adults
 					<div class="value-button" id="decrease" onclick="decreaseValue(document.getElementById('adultnumber'))" value="Decrease Value">-</div>
@@ -38,7 +35,8 @@
 				</div>
 			</div>
 		</form>	
-		</div>
+	</div>
+  <div class="col"></div>
 		</div>
 		
 	</body>
