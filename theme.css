@@ -55,6 +55,6 @@ img {
 }
 .trick {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   height: 150px;
 }
