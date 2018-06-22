@@ -5,15 +5,6 @@
 	margin: 0px;
 }
 
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-
 /*  GROUPING  */
 .group:before,
 .group:after {
@@ -57,4 +48,10 @@ img {
   display: inline-block;
   vertical-align: top;
   height: 150px;
+}
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: 1;
 }
