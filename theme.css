@@ -52,5 +52,5 @@ img {
 .flex-grid {
   display: flex;
 }
-.col { 	display: block; 	float:left; 	margin: 1% 0 1% 1.6%; border:10px} 
+.col { 	display: block; 	float:left; 	margin: 1% 0 1% 1.6%; border:10px solid} 
 .col:first-child { margin-left: 0; } 
