@@ -23,13 +23,13 @@
 	width: 100%;
 }
 .span_3_of_4 {
-	width: 20%;
+	width: 75%;
 }
 .span_2_of_4 {
-	width: 35%;
+	width: 50%;
 }
 .span_1_of_4 {
-	width: 50%;
+	width: 25%;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
