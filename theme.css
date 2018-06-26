@@ -61,7 +61,7 @@ img {
 .flex-grid {
   display: flex;
 }
-.col { 	display: block; 	float:left; 	margin: 1% 0 1% 1.6%; border:1px solid} 
+.col { 	display: inline-block; 	float:left; 	margin: 1% 0 1% 1.6%; border:1px solid} 
 .col:first-child { margin-left: 0; } 
 .value-button {
 background-color: #4CAF50;
