@@ -98,7 +98,13 @@
 	
 <script>
 function openTickets(){
-	document.getElementById("tickets").style.display="inline-block";
+	var x = document.getElementById("tickets");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
 }	
 function validateForm() {
     var x = document.forms["tickets"]["adultnumber"].value;
