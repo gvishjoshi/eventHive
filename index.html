@@ -40,8 +40,9 @@
 	
 <script>
 function openTickets(){
-	
-		<form name="tickets" netlify onsubmit="return validateForm()" method="POST" >
+	document.getElementById("tickets").style.display="block";
+}	
+		<form id="tickets" name="tickets" netlify onsubmit="return validateForm()" method="POST" >
 			<div class="section group">
 				<div class="col span_21_of_2">
 					Adults
@@ -98,11 +99,6 @@ function openTickets(){
 				</div>
 			</div>
 				</form>	
-					
-						</div>
-
-	
-}
 function validateForm() {
     var x = document.forms["tickets"]["adultnumber"].value;
     var y = document.forms["tickets"]["kidsnumber"].value;
