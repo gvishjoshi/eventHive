@@ -79,3 +79,6 @@ padding: 3px;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;  }
+.hidden {
+display: none;
+}
