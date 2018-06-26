@@ -13,7 +13,34 @@
 	  </div>
 	</div>
 	
-<!--		
+					<div class="col span_1_of_4">
+							<div class="eventsection"><b>Event Name</b></div>
+							<div class="eventsection"><div><b>31st December 1999</b></div>
+							<div><b>4 PM to 7 PM</b></div>
+						</div>
+							<div class="eventsection"><b>Venue Name</b></div>
+			<div>Address line 1</div>
+			<div>Address line 2</div>
+				<div>Address line 3</div>
+		</div>
+					<div class="col span_1_of_4">
+	<b>Event Brief</b>
+		<dl>
+		  	<dt>this is a test to try out the list element of html. this is a test to try out the list element of html. this is a test to try out the list element of html. this is a test to try out the list element of html</dt>
+		</dl>
+	</div>
+			<div class="col span_1_of_4">		
+	<div class="trick">
+	     <img src="ordertickets.jpg" alt="Order Tickets" onclick="openTickets()">
+		</div>
+
+  </div>
+		
+</body>
+	
+<script>
+function openTickets(){
+	
 		<form name="tickets" netlify onsubmit="return validateForm()" method="POST" >
 			<div class="section group">
 				<div class="col span_21_of_2">
@@ -73,33 +100,9 @@
 				</form>	
 					
 						</div>
--->
-					<div class="col span_1_of_4">
-							<div class="eventsection"><b>Event Name</b></div>
-							<div class="eventsection"><div><b>31st December 1999</b></div>
-							<div><b>4 PM to 7 PM</b></div>
-						</div>
-							<div class="eventsection"><b>Venue Name</b></div>
-			<div>Address line 1</div>
-			<div>Address line 2</div>
-				<div>Address line 3</div>
-		</div>
-					<div class="col span_1_of_4">
-	<b>Event Brief</b>
-		<dl>
-		  	<dt>this is a test to try out the list element of html. this is a test to try out the list element of html. this is a test to try out the list element of html. this is a test to try out the list element of html</dt>
-		</dl>
-	</div>
-			<div class="col span_1_of_4">		
-	<div class="trick">
-	     <img src="ordertickets.jpg" alt="Order Tickets">
-		</div>
 
-  </div>
-		
-</body>
 	
-<script>
+}
 function validateForm() {
     var x = document.forms["tickets"]["adultnumber"].value;
     var y = document.forms["tickets"]["kidsnumber"].value;
