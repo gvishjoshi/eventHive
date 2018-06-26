@@ -4,6 +4,11 @@
 	padding: 0px;
 	margin: 0px;
 }
+.eventsection {
+	clear: both;
+	padding: 2px;
+	margin: 0px;
+}
 
 /*  GROUPING  */
 .group:before,
