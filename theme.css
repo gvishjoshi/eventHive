@@ -68,6 +68,7 @@ img {
 .value-button {
 background-color: #4CAF50;
     border: none;
+padding: 3px;
     color: white;
     text-align: center;
     text-decoration: none;
