@@ -18,6 +18,7 @@
   height: 300px;
 }
 .link span {
+  padding: 2px;
   text-align: center;
   display:block;
 }
