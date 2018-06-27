@@ -8,7 +8,7 @@
   flex: 1 1 20%; /* The important bit */
   padding: 20px;
   color: white;
-  border: 10px solid blue;
+  border: 1px blue;
   display: flex;
   justify-content: center;
   height: 300px;
