@@ -20,13 +20,6 @@
 
 .link {
   display: inline-block;
-    height: 100px;
-}
-.trick {
-  display: inline-block;
-  vertical-align: top;
-  width: auto;
-  height: 150px;
 }
 .container img{
   height:100%;
