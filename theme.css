@@ -7,7 +7,7 @@
 .col {
   flex: 1 1 20%; /* The important bit */
   background: tomato;
-  min-width: 250px;
+  margin: 20px;
   color: white;
   border: 1px solid white;
   display: flex;
