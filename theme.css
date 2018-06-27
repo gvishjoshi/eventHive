@@ -14,8 +14,13 @@
   justify-content: center;
   height: 300px;
 }
-.text {
-    vertical-align: middle;
+.link span {
+  text-align: center;
+  display:block;
+}
+
+.link {
+  display: inline-block;
 }
 .trick {
   display: inline-block;
