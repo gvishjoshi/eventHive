@@ -2,13 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: 10px;
+  border: 10px solid red;
 }
 
 .col {
   flex: 1 1 20%; /* The important bit */
   padding: 20px;
-  color: white;
   border: 2px solid blue;
   display: flex;
   justify-content: center;
