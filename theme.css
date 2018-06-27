@@ -20,3 +20,18 @@
   vertical-align: top;
   height: 200px;
 }
+.container {
+  width: 538px;
+}
+section,
+aside {
+  margin: 10px;
+}
+section {
+  float: left;
+  width: 340px;
+}
+aside {
+  float: right;
+  width: 158px;
+}
