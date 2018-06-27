@@ -23,15 +23,15 @@
 .container {
   width: 538px;
 }
-section,
-aside {
-  margin: 10px;
-}
-section {
+.section {
   float: left;
-  width: 340px;
+  width: 60%;
 }
-aside {
+.asideright {
   float: right;
-  width: 158px;
+  width: 20%;
+}
+.asideleft {
+  float: left;
+  width: 20%;
 }
