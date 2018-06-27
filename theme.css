@@ -7,12 +7,29 @@
 .row:before, .row:after{
       display: none;
     }
-.navBar {
-  background-color: $color2;
-  position: fixed;
-  min-width: 100%;
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
+.topnav li {float: left;}
+
+.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav li a:hover:not(.active) {background-color: #111;}
+
+.topnav li a.active {background-color: #4CAF50;}
+
+.topnav li.right {float: right;}
 .col {
   flex-basis: 100%;
   margin: 0 20px;
