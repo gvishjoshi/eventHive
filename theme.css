@@ -19,7 +19,7 @@
   display: inline-block;
   vertical-align: top;
   width: auto;
-  height: auto;
+  height: 10px;
 }
 .container {
   width: 100%;
