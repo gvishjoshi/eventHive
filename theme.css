@@ -4,7 +4,9 @@
   align-items: center;
   border: 10px solid red;
 }
-
+.row:before, .row:after{
+      display: none;
+    }
 .col {
   flex-basis: 100%;
   margin: 0 20px;
