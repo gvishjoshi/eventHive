@@ -19,7 +19,7 @@
   width: auto;
   height: 150px;
 }
-.container {
+.row {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
