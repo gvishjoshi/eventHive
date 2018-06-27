@@ -7,11 +7,10 @@
 .col {
   flex: 1 1 20%; /* The important bit */
   background: tomato;
-  margin: 20px;
+  padding: 20px;
   color: white;
   border: 1px solid white;
   display: flex;
-  align-items: center;
   justify-content: center;
   height: 300px;
 }
