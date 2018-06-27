@@ -13,6 +13,9 @@
   justify-content: center;
   height: 300px;
 }
+.text {
+    vertical-align: middle;
+}
 .trick {
   display: inline-block;
   vertical-align: top;
