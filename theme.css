@@ -24,6 +24,11 @@
   flex-direction: row;
   justify-content: flex-start;
 }
+.container img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
 .wrapper {
   display: flex;  
   flex-flow: row wrap;
