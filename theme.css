@@ -12,6 +12,25 @@
   position: fixed;
   min-width: 100%;
 }
+nav {
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+    
+    a {
+      color: $color1;
+      text-decoration: none;
+      transition: all .5s ease;
+
+      &:hover {color: $color3;}
+    }
+  }
+  
+  li  {
+    display: inline-block;
+  }
 .col {
   flex-basis: 100%;
   margin: 0 20px;
