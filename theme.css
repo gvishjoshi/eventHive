@@ -11,12 +11,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex: 1 1 20%; /* The important bit */
   padding: 20px;
   border: 2px solid blue;
   display: flex;
-  justify-content: center;
   height: 300px;
 }
 .link span {
