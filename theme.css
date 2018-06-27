@@ -21,6 +21,7 @@
 
 .link {
   display: inline-block;
+    height: 100px;
 }
 .trick {
   display: inline-block;
