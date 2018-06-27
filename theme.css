@@ -17,7 +17,6 @@
   flex: 1 1 20%; /* The important bit */
   border: 2px solid blue;
   display: flex;
-  height: 375px;
 }
 .link span {
   padding: 10px;
