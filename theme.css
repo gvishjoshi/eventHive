@@ -29,11 +29,6 @@
   width: auto;
   height: 100px;
 }
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
 .container img{
   height:100%;
   width:100%;
