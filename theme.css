@@ -30,6 +30,10 @@
 .topnav li a.active {background-color: #4CAF50;}
 
 .topnav li.right {float: right;}
+@media screen and (max-width: 600px){
+    .topnav li.right, 
+    .topnav li {float: none;}
+}
 .col {
   flex-basis: 100%;
   margin: 0 20px;
