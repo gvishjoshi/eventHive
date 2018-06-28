@@ -43,7 +43,7 @@
 					Adults
 				</div>
 				<div class="col">
-					<select id="adultnumber" onChange="increaseValue(document.getElementById('adultnumber'));" name="adultnumber">
+					<select id="adultnumber" onChange="getTotal();" name="adultnumber">
     <option value="0">1</option>
     <option value="1">2</option>
     <option value="2">3</option>
@@ -64,7 +64,7 @@
 					Kids
 				</div>
 				<div class="col">
-<select id="kidsnumber" onChange="increaseValue(document.getElementById('kidsnumber'));" name="kidsnumber">
+<select id="kidsnumber" onChange="getTotal();" name="kidsnumber">
     <option value="0">1</option>
     <option value="1">2</option>
     <option value="2">3</option>
@@ -137,7 +137,7 @@ function validateForm() {
         return false;
     }
 }
-function increaseValue(number) {
+function increaseValue(number1, number2) {
   var value = parseInt(number.value, 10);
   value = isNaN(value) ? 0 : value;
   value++;
