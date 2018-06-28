@@ -112,63 +112,6 @@
 			</form>		
 		</div>
 			
-<!--			
-		  <div class="col">
-						<form id="tickets" name="tickets" netlify onsubmit="return validateForm()" method="POST" >
-			<div class="row">
-				<col>
-					<span>Adults</span>
-				</col>
-							<col>
-					<select id="adultnumber" onChange="getTotal();" name="adultnumber">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-						
-  </select>
-							</col>
-					X £15
-			</div>
-			<div class="row">
-					Kids
-<select id="kidsnumber" onChange="getTotal();" name="kidsnumber">
-    <option value="0">0</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-  </select>					 
-					X £10
-			</div>
-			<div class="row">
-					<div><b>To Pay: </div>
-					<div><label id="cakePrice"/></b></div>
-			</div>
-			<div class="row">
-					<b>Email:</b>
-					<input type="text" maxlength="72" id="emailId" name="RequestEmail" required/>
-			</div>
-			<div class="row">
-					<b>Name:</b>
-					<input type="text" maxlength="72" id="name" name="RequestName" required/>
-			</div>
-			<div class="row" text-align: center;>
-					<button type="submit" value="Submit">Submit</button>
-								</div>
-				</div>
-			</div>
-		</form>	
-
-			</div>
--->
 	</div>
 	  </div>
 	</div>
@@ -195,27 +138,14 @@ function validateForm() {
         return false;
     }
 }
-function increaseValue(number1, number2) {
-  var value = parseInt(number.value, 10);
-  value = isNaN(value) ? 0 : value;
-  value++;
-  number.value = value;
-    getTotal();
-}
-function decreaseValue(number) {
-  var value = parseInt(number.value, 10);
-  value = isNaN(value) ? 0 : value;
-  value < 1 ? value = 1 : '';
-  value--;
- number.value = value;
-	getTotal();
-}
 	function getTotal()
 {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
 	var totalTickets = document.getElementById('adultnumber').value + document.getElementById('kidsnumber').value;
     var cakePrice = document.getElementById('adultnumber').value * 15  +  document.getElementById('kidsnumber').value * 10 ;
+document.getElementById('totalTickets').innerHTML =
+                                      "£"+totalTickets;	
  document.getElementById('cakePrice').innerHTML =
                                       "£"+cakePrice;	
 }
