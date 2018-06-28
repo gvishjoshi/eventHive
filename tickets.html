@@ -144,7 +144,7 @@ function validateForm() {
     //Each function returns a number so by calling them we add the values they return together
 	var x = document.forms["tickets"]["adultnumber"].value;
     var y = document.forms["tickets"]["kidsnumber"].value;
-	var totalTickets = x + y;
+	var totalTickets = +x + +y;
     var cakePrice = document.getElementById('adultnumber').value * 15  +  document.getElementById('kidsnumber').value * 10 ;
 document.getElementById('totalTickets').innerHTML =
                                       totalTickets;	
