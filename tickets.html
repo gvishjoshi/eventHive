@@ -104,4 +104,47 @@
   <footer class="footer">Footer</footer>
 </div>
 	</body>
+<script>
+function openTickets(){
+	var x = document.getElementById("tickets");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}	
+function validateForm() {
+    var x = document.forms["tickets"]["adultnumber"].value;
+    var y = document.forms["tickets"]["kidsnumber"].value;
+	
+    if (x == "0" || y== "0") {
+        alert("Enter number of tickets");
+        return false;
+    }
+}
+function increaseValue(number) {
+  var value = parseInt(number.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  number.value = value;
+    getTotal();
+}
+function decreaseValue(number) {
+  var value = parseInt(number.value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+ number.value = value;
+	getTotal();
+}
+	function getTotal()
+{
+    //Here we get the total price by calling our function
+    //Each function returns a number so by calling them we add the values they return together
+    var cakePrice = document.getElementById('adultnumber').value * 15  +  document.getElementById('kidsnumber').value * 10 ;
+ document.getElementById('cakePrice').innerHTML =
+                                      "£"+cakePrice;	
+}
+	
+	   </script>	
 </html>
