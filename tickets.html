@@ -47,6 +47,23 @@
 	<form id="tickets" name="tickets" netlify onsubmit="return validateForm()" method="POST" >
 				<div class="row">
 					<div class="col">
+						<b>Email:</b>
+					</div>
+					<div class="col">
+						<input type="text" maxlength="72" id="emailId" name="RequestEmail" required/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<b>Name:</b>
+					</div>
+					<div class="col">
+						<input type="text" maxlength="72" id="name" name="RequestName" required/>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col">
 						Adults
 					</div>
 					<div class="col">
@@ -88,22 +105,6 @@
 						<div><label id="cakePrice"/></b></div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col">
-						<b>Email:</b>
-					</div>
-					<div class="col">
-						<input type="text" maxlength="72" id="emailId" name="RequestEmail" required/>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col">
-						<b>Name:</b>
-					</div>
-					<div class="col">
-						<input type="text" maxlength="72" id="name" name="RequestName" required/>
-					</div>
-				</div>
 				<div class="row">					
 					<div class="col">
 						<button type="submit" value="Submit">Submit</button>
@@ -121,14 +122,6 @@
 </div>
 	</body>
 <script>
-function openTickets(){
-	var x = document.getElementById("tickets");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}	
 function validateForm() {
     var x = document.forms["tickets"]["adultnumber"].value;
     var y = document.forms["tickets"]["kidsnumber"].value;
