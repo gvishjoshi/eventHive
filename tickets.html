@@ -82,6 +82,9 @@
 						To Pay
 					</div>
 					<div class="col">
+						<div><label id="totalTickets"/></b></div>
+					</div>
+					<div class="col">
 						<div><label id="cakePrice"/></b></div>
 					</div>
 				</div>
@@ -211,6 +214,7 @@ function decreaseValue(number) {
 {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
+	var totalTickets = document.getElementById('adultnumber').value + document.getElementById('kidsnumber').value;
     var cakePrice = document.getElementById('adultnumber').value * 15  +  document.getElementById('kidsnumber').value * 10 ;
  document.getElementById('cakePrice').innerHTML =
                                       "£"+cakePrice;	
