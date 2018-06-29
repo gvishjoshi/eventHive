@@ -75,7 +75,7 @@
 </select>X £15
 					</div>
 					<div class="col">
-						
+						<label id="adultprice"/>
 					</div>
 				</div>
 				<div class="row">
@@ -91,7 +91,7 @@
 </select>X £10
 					</div>
 					<div class="col">
-						
+						<label id="kidsprice"/>
 					</div>
 				</div>
 				<div class="row">
@@ -102,7 +102,7 @@
 						<div><label id="totalTickets"/></b></div>
 					</div>
 					<div class="col">
-						<div><label id="cakePrice"/></b></div>
+						<div><label id="cakePrice"/></div>
 					</div>
 				</div>
 				<div class="row">					
@@ -136,7 +136,9 @@ function validateForm() {
     //Here we get the total price by calling our function
     //Each function returns a number so by calling them we add the values they return together
 	var x = document.forms["tickets"]["adultnumber"].value;
+	var adultprice = x * 15;
     var y = document.forms["tickets"]["kidsnumber"].value;
+	var kidsprice = y * 15;
 	var totalTickets = +x + +y;
     var cakePrice = document.getElementById('adultnumber').value * 15  +  document.getElementById('kidsnumber').value * 10 ;
 document.getElementById('totalTickets').innerHTML =
