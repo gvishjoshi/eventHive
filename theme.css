@@ -1,5 +1,4 @@
 .row {
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   border: 10px solid red;
