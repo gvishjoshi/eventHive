@@ -90,7 +90,10 @@
 .aside-2 {
   background: hotpink;
 }
-
+@media screen and (max-width:990px) {
+  .container { flex-wrap: wrap;  }
+  .item:first-child { flex-basis: 100%; }
+}
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
 }
