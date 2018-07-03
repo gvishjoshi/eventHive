@@ -34,6 +34,7 @@
     .topnav li.right, 
     .topnav li {float: none;}
 }
+@media only screen and (min-width: 768px) {
 .col {
   flex-basis: 100%;
   margin: 0 20px;
@@ -44,6 +45,7 @@
   flex: 1 1 20%; /* The important bit */
   border: 2px solid blue;
   display: flex;
+}
 }
 .link span {
   padding: 10px;
@@ -89,6 +91,9 @@
 
 .aside-2 {
   background: hotpink;
+}
+[class*="col-"] {
+    width: 100%;
 }
 @media screen and (max-width:990px) {
   .container { flex-wrap: wrap;  }
