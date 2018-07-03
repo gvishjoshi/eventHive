@@ -134,7 +134,7 @@ nav {
 	width: 27px;
 	height: 22px;
 	background: url(../menu.png) center;
-
+background-size: contain;
 }
 
 a:hover#menu-icon {
