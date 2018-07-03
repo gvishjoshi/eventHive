@@ -51,12 +51,14 @@
 		  	<div class="col">
 				<span>
 	<form id="tickets" name="tickets" netlify onsubmit="return validateForm()" method="POST" >
-				<div class="row">
+		<div class="row">
+				<div class="col-form">
 						<b>Email:</b>
 							<input type="text" maxlength="72" id="emailId" name="RequestEmail" required/>
 				</div>
+		</div>
 				<div class="row">
-					<div class="col">
+					<div class="col-form">
 						<b>Name:</b>
 					</div>
 					<div class="col">
@@ -65,10 +67,10 @@
 				</div>
 		
 				<div class="row">
-					<div class="col">
+					<div class="col-form">
 						Adults
 					</div>
-					<div class="col">
+					<div class="col-form">
 						<select id="adultnumber" name="adultnumber" onchange="getTotal();">
   <option value="0">0</option>
   <option value="1">1</option>
@@ -76,15 +78,15 @@
   <option value="3">3</option>
 </select>X £15
 					</div>
-					<div class="col">
+					<div class="col-form">
 						<label id="adultprice"/>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col">
+					<div class="col-form">
 						Kids
 					</div>
-					<div class="col">
+					<div class="col-form">
 						<select id="kidsnumber" name="kidsnumber" onchange="getTotal();">
   <option value="0">0</option>
   <option value="1">1</option>
@@ -92,23 +94,23 @@
   <option value="3">3</option>
 </select>X £10
 					</div>
-					<div class="col">
+					<div class="col-form">
 						<label id="kidsprice"/>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col">
+					<div class="col-form">
 						To Pay
 					</div>
-					<div class="col">
+					<div class="col-form">
 						<div><label id="totalTickets"/></b></div>
 					</div>
-					<div class="col">
+					<div class="col-form">
 						<div><label id="cakePrice"/></div>
 					</div>
 				</div>
 				<div class="row">					
-					<div class="col">
+					<div class="col-form">
 						<button type="submit" value="Submit">Submit</button>
 					</div>
 				</div>
