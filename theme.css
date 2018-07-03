@@ -20,17 +20,6 @@
   border: 2px solid blue;
   display: flex;
 }
-@media only screen and (max-width: 768px) {
-.col {
-  margin: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-start;
-  border: 2px solid blue;
-  display: flex;
-}	
-}	
 
 .link span {
   padding: 10px;
