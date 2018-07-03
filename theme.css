@@ -71,6 +71,7 @@ padding-top: 80px;
 [class*="col-"] {
     width: 100%;
 }
+/*
 @media screen and (max-width:990px) {
   .container { flex-wrap: wrap;  }
   .item:first-child { flex-basis: 100%; }
@@ -78,7 +79,7 @@ padding-top: 80px;
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
 }
-/* (min-width: 800px) */
+ (min-width: 800px) */
 @media all {
   .main    { flex: 3 0px; }
   .aside-1 { order: 1; } 
