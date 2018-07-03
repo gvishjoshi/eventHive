@@ -41,7 +41,7 @@
   justify-content: flex-start;
   flex: 1 1 20%; /* The important bit */
   border: 2px solid blue;
-  display: inline;
+  display: flex;
 }
 .link span {
   padding: 10px;
