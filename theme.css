@@ -7,33 +7,6 @@
 .row:before, .row:after{
       display: none;
     }
-.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.topnav li {float: left;}
-
-.topnav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav li a:hover:not(.active) {background-color: #111;}
-
-.topnav li a.active {background-color: #4CAF50;}
-
-.topnav li.right {float: right;}
-@media screen and (max-width: 600px){
-    .topnav li.right, 
-    .topnav li {float: none;}
-}
 @media only screen and (min-width: 768px) {
 .col {
   flex-basis: 100%;
@@ -105,8 +78,8 @@ padding-top: 80px;
 @media all and (min-width: 600px) {
   .aside { flex: 1 auto; }
 }
-
-@media all and (min-width: 800px) {
+/* (min-width: 800px) */
+@media all {
   .main    { flex: 3 0px; }
   .aside-1 { order: 1; } 
   .main    { order: 2; }
