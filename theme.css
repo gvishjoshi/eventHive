@@ -33,6 +33,16 @@
   display: flex;
 }
 }
+.col-form {
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1 1 20%; /* The important bit */
+  border: 2px solid blue;
+  display: flex;
+}
 .link span {
   padding: 10px;
   text-align: center;
