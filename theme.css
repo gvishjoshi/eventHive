@@ -66,6 +66,7 @@
   flex-flow: row wrap;
   font-weight: bold;
   text-align: center;
+padding-top: 80px;
 }
 
 .wrapper > * {
@@ -84,7 +85,6 @@
 
 .main {
   text-align: left;
-	padding-top:80px;
 }
 
 .aside-1 {
