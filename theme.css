@@ -112,6 +112,7 @@
 	width: 200px;
 	height: 40px;
 	background: url(../eventhive.png) no-repeat center;
+	background-size: contain;
 	display: block;
 
 }
