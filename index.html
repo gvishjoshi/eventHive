@@ -77,7 +77,7 @@
       var heroes = jsonObj['eventdata']['eventdetails'];
 	    var eventrow = document.getElementById("eventrow");
       for(var i = 0; i < heroes.length; i++) {
-        var clone = document.createElement(eventrow);
+        var clone = document.createElement("eventrow");
       document.appendChild(clone);
         document.getElementById("eventname").innerHTML = heroes[i].eventname;
 	      document.getElementById("eventhost").innerHTML = heroes[i].eventhost;
