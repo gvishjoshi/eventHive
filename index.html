@@ -79,7 +79,7 @@
       for(var i = 0; i < heroes.length; i++) {
         var clone = document.createElement("eventrow");
      
-        var eventname = getElementById("eventname");
+        var eventname = document.getElementById("eventname");
 	eventname.innerHTML = heroes[i].eventname;
 	      eventname.appendChild(clone);
 	      clone.getElementById("eventhost").innerHTML = heroes[i].eventhost;
