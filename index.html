@@ -39,7 +39,7 @@
 				<div class="link">
 		  			<img src="Desert.jpg" alt="Mounytain View">
 					<span>
-						<div><a href="javascript:window.open('eventdetails.html', 'Details of the Event', 'width=200,height=150');"><b><label id="eventname"/></b></a></div>
+						<div><a1 href="javascript:window.open('eventdetails.html', 'Details of the Event', 'width=200,height=150');"><b><label id="eventname"/></b></a></div>
 						<div><i>Hosted by ABC Limited</i></div>
 						<div><b>One-act Play</b></div>
 						</span>
@@ -117,11 +117,10 @@
       showHeroes(superHeroes); 
     }
     function showHeroes(jsonObj) {
-	    var myElement = document.getElementById("eventname");
       var heroes = jsonObj['eventdata']['eventdetails'];
       for(var i = 0; i < heroes.length; i++) {
         
-        myElement.value = heroes[i].eventname;
+        document.getElementById("eventname").value = heroes[i].eventname;
         
         
       }
