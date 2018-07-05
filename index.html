@@ -126,21 +126,8 @@
         var myPara3 = document.createElement('p');
         var myList = document.createElement('ul');
         myH2.textContent = heroes[i].eventname;
-        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-        myPara2.textContent = 'Age: ' + heroes[i].age;
-        myPara3.textContent = 'Superpowers:';
-        var superPowers = heroes[i].powers;
-        for(var j = 0; j < superPowers.length; j++) {
-          var listItem = document.createElement('li');
-          listItem.textContent = superPowers[j];
-          myList.appendChild(listItem);
-        }
-        myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
-        myArticle.appendChild(myPara3);
-        myArticle.appendChild(myList);
-        section.appendChild(myArticle);
+        
+        
       }
     }
     </script>
