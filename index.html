@@ -82,11 +82,21 @@
         var eventname = document.getElementById("eventname");
 	eventname.innerHTML = heroes[i].eventname;
 	      eventname.appendChild(clone);
-	      clone.getElementById("eventhost").innerHTML = heroes[i].eventhost;
-	      document.getElementById("eventtype").innerHTML = heroes[i].eventtype;
-	      document.getElementById("eventstart").innerHTML = heroes[i].eventstart;
-	      document.getElementById("eventtime").innerHTML = heroes[i].eventtime;
-	      document.getElementById("eventaddress").innerHTML = heroes[i].eventaddress;
+	      var eventhost = document.getElementById("eventhost");
+	      eventhost.innerHTML = heroes[i].eventhost;
+	      eventname.appendChild(clone);
+	      var eventtype = document.getElementById("eventtype");
+	      eventtype.innerHTML = heroes[i].eventtype;
+	      eventname.appendChild(clone);
+	      var eventstart = document.getElementById("eventstart");
+	      eventstart.innerHTML = heroes[i].eventstart;
+	      eventname.appendChild(clone);
+	      var eventtime = document.getElementById("eventtime");
+	      eventtime.innerHTML = heroes[i].eventtime;
+	      eventname.appendChild(clone);
+	      var eventaddress = document.getElementById("eventaddress");
+	      eventaddress.innerHTML = heroes[i].eventaddress;
+	      eventname.appendChild(clone);
       document.body.appendChild(clone);   
         
       }
