@@ -27,14 +27,12 @@
 
 </nav>
 	</header>	
-		<section>
-
-      </section>
+		
 		<div class="wrapper">
   <div class="main">
 	  <div class="container">
 		  
-	  	<div class="row">			
+	  	<div class="row" id="eventrow">			
 		  	<div class="col">
 				<div class="link">
 		  			<img src="Desert.jpg" alt="Mounytain View">
@@ -65,8 +63,6 @@
 			<footer class="footer"><i>designed by </i>Morpheus Software Solutions Ltd</footer>
 	   </div>
 <script>
-    var header = document.querySelector('eventname');
-    var section = document.querySelector('section');
     var requestURL = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/eventdata.json';
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
@@ -79,8 +75,10 @@
     }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
+	    var eventrow = document.getElementById("eventrow"),
       for(var i = 0; i < heroes.length; i++) {
-        
+        var clone = eventrow.cloneNode(true);
+      form.appendChild(clone);
         document.getElementById("eventname").innerHTML = heroes[i].eventname;
 	      document.getElementById("eventhost").innerHTML = heroes[i].eventhost;
 	      document.getElementById("eventtype").innerHTML = heroes[i].eventtype;
