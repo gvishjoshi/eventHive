@@ -75,7 +75,7 @@
     }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
-	    var eventrow = document.getElementById("eventrow"),
+	    var eventrow = document.getElementById("eventrow");
       for(var i = 0; i < heroes.length; i++) {
         var clone = eventrow.cloneNode(true);
       form.appendChild(clone);
