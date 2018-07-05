@@ -3,7 +3,8 @@
 		{
 			"eventdetails":
 				[
-					{ "eventname": "11001", "type": "One-act Play", "startdate": "31st December 2199" }
+					{ "eventname": "11001", "type": "One-act Play", "startdate": "31st December 2199",
+					"eventtime": "4:30 PM to 7:30 PM", "eventhost": "Hosted by ABC Ltd" }
 				]
 		}
 }
