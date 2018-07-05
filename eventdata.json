@@ -1,5 +1,5 @@
 {
-"eventdata": "This is a simple value",
+"eventdata": {
   [ 
   { "eventname": "event 1" }, 
   { "eventname": "event 2" },
@@ -7,4 +7,5 @@
   { "eventname": "event 4" }
   
 				]
+}
 }
