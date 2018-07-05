@@ -115,7 +115,7 @@
       var superHeroesText = request.response;
       var superHeroes = JSON.parse(superHeroesText);
       showHeroes(superHeroes); 
-	    
+    }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
       for(var i = 0; i < heroes.length; i++) {
@@ -142,7 +142,7 @@
         myArticle.appendChild(myList);
         section.appendChild(myArticle);
       }
-    }
+ 
     </script>
 	</body>
 </html>
