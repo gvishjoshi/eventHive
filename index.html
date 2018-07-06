@@ -108,15 +108,23 @@
 	     eventcate.appendChild(eventtype);
 	      eventcol.appendChild(eventcate);
 	      
+		var eventdttm = document.createElement('div');
+	      eventtm.className = "span";	
+	      
+	      var eventdt = document.createElement('div');
 	      var eventstart = document.createElement('label');
 	      eventstart.Id = "eventstart";
 	      eventstart.innerHTML = heroes[i].eventstart;
-	      eventcol.appendChild(eventstart);
+	      eventdt.appendChild(eventstart);
+	      eventdttm.appendChild(eventdt);
 	      
+	      var eventtm = document.createElement('div');
 	      var eventtime = document.createElement('label');
 	      eventtime.Id = "eventtime";
 	      eventtime.innerHTML = heroes[i].eventtime;
-	      eventcol.appendChild(eventtime);
+	      eventtm.appendChild(eventtime);
+	      eventdttm.appendChild(eventtm);
+	      eventcol.appendChild(eventdttm);
 	      
 	      var eventaddress = document.createElement('label');
 	      eventaddress.Id = "eventaddress";
