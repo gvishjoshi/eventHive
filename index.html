@@ -121,6 +121,10 @@
 	      ticketstatus.href = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/discounts.html';
 	      eventcol.appendChild(ticketstatus);
 
+	      var bookbutton = document.createElement("INPUT");
+		bookbutton.setAttribute("type", "submit");
+		bookbutton.value	=	'Book Tickets';
+	       eventcol.appendChild(bookbutton);
 	      eventrow.appendChild(eventcol);
 	      eventcon.appendChild(eventrow);   
 	      main.appendChild(eventcon);
