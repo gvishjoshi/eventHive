@@ -35,8 +35,9 @@
 	  	<div class="row" id="eventrow">		
 		
 		  	<div class="col" id="eventcol">
+<!--				
 				<div class="link">
-<!--					
+					
 		  			<img src="Desert.jpg" alt="Mounytain View">
 -->
 					<span>
@@ -89,8 +90,8 @@
 	    document.body.appendChild(wrapper);   
       for(var i = 0; i < heroes.length; i++) {
         var clone = document.createElement("eventrow");
-	      eventrow.className += "row";
-	      eventcol.className += "col";
+	      eventrow.className = "row";
+	      eventcol.className = "col";
      clone.className += "link";
         var eventname = document.getElementById("eventname");
 	eventname.innerHTML = heroes[i].eventname;
