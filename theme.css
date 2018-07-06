@@ -92,7 +92,8 @@
 }
 .container
 {
-	 overflow: hidden; 
+	 overflow: hidden;
+	display: flex;
 }
 .container img{
   height:100%;
