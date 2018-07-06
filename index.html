@@ -92,32 +92,30 @@
         var clone = document.createElement("eventrow");
 	      eventrow.className = "row";
 	      eventcol.className = "col";
-     clone.className += "link";
         var eventname = document.getElementById("eventname");
 	eventname.innerHTML = heroes[i].eventname;
 	      eventcol.appendChild(eventname);
 	      
 	      var eventhost = document.getElementById("eventhost");
 	      eventhost.innerHTML = heroes[i].eventhost;
-	     clone.appendChild(eventhost);
+	     eventcol.appendChild(eventhost);
 	      
 	      var eventtype = document.getElementById("eventtype");
 	      eventtype.innerHTML = heroes[i].eventtype;
-	     clone.appendChild(eventtype);
+	     eventcol.appendChild(eventtype);
 	      
 	      var eventstart = document.getElementById("eventstart");
 	      eventstart.innerHTML = heroes[i].eventstart;
-	      clone.appendChild(eventstart);
+	      eventcol.appendChild(eventstart);
 	      
 	      var eventtime = document.getElementById("eventtime");
 	      eventtime.innerHTML = heroes[i].eventtime;
-	      clone.appendChild(eventtime);
+	      eventcol.appendChild(eventtime);
 	      
 	      var eventaddress = document.getElementById("eventaddress");
 	      eventaddress.innerHTML = heroes[i].eventaddress;
-	      clone.appendChild(eventaddress);
+	      eventcol.appendChild(eventaddress);
 	      
-      eventcol.appendChild(clone);   
 	      eventrow.appendChild(eventcol);
 	      eventcon.appendChild(eventrow);   
         
