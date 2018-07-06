@@ -88,6 +88,12 @@ padding: 10px;
 	align-items: center;
 }
 
+.span {
+  padding: 10px;
+  text-align: center;
+  display:block;
+}
+
 .link span {
   padding: 10px;
   text-align: center;
