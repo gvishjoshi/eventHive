@@ -40,11 +40,11 @@
 					
 		  			<img src="Desert.jpg" alt="Mounytain View">
 -->
-					<span>
-<!--						
+<!--					<span>
+						
 
 						<div><a href="javascript:window.open('eventdetails.html', 'Details of the Event', 'width=200,height=150');"><b><label id="eventname"></label></b></a></div>
--->
+
 						<div><a href="javascript:window.open('eventdetails.html', 'Details of the Event', 'width=200,height=150');"><b><label id="eventname"></label></b></a></div>
 						<div><i><label id="eventhost"></label></i></div>
 						<div><b><label id="eventtype"></label></b></div>
@@ -56,7 +56,7 @@
 						<span>
 						<div><label id="eventaddress"></label></div>
 					</span>
-<!--				
+				
 					<span>
 					<div><a href="javascript:window.open('discounts.html', 'Discount Offers', 'width=200,height=150');"><i><label id="ticketstatus"></label></i></a></div>	
 					<input type="submit" value="Book Tickets" class="wisteria-flat-button" onclick="window.location.href = 'tickets.html'"/>
@@ -86,41 +86,41 @@
     }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
-	    var eventcon = document.getElementById("eventcontainer");
-	    var wrapper = document.getElementById("wrapper");
-	    var main = document.getElementById("main");
+	    var eventcon = document.createElementById("eventcontainer");
+	    var wrapper = document.createElementById("wrapper");
+	    var main = document.createElementById("main");
 	    wrapper.appendChild(main);
 	    
 	    document.body.appendChild(wrapper);   
       for(var i = 0; i < heroes.length; i++) {
-	    var eventcol = document.getElementById("eventcol");
-	    var eventrow = document.getElementById("eventrow");
+	    var eventcol = document.createElementById("eventcol");
+	    var eventrow = document.createElementById("eventrow");
         
 	      eventrow.className = "row";
 	      eventcol.className = "col";
 	      
-        var eventname = document.getElementById("eventname");
+        var eventname = document.createElementById("eventname");
 	      eventname.className	=	"span";
 	eventname.innerHTML = heroes[i].eventname;
 	      eventcol.appendChild(eventname);
 	      
-	      var eventhost = document.getElementById("eventhost");
+	      var eventhost = document.createElementById("eventhost");
 	      eventhost.innerHTML = heroes[i].eventhost;
 	     eventcol.appendChild(eventhost);
 	      
-	      var eventtype = document.getElementById("eventtype");
+	      var eventtype = document.createElementById("eventtype");
 	      eventtype.innerHTML = heroes[i].eventtype;
 	     eventcol.appendChild(eventtype);
 	      
-	      var eventstart = document.getElementById("eventstart");
+	      var eventstart = document.createElementById("eventstart");
 	      eventstart.innerHTML = heroes[i].eventstart;
 	      eventcol.appendChild(eventstart);
 	      
-	      var eventtime = document.getElementById("eventtime");
+	      var eventtime = document.createElementById("eventtime");
 	      eventtime.innerHTML = heroes[i].eventtime;
 	      eventcol.appendChild(eventtime);
 	      
-	      var eventaddress = document.getElementById("eventaddress");
+	      var eventaddress = document.createElementById("eventaddress");
 	      eventaddress.innerHTML = heroes[i].eventaddress;
 	      eventcol.appendChild(eventaddress);
 	      
