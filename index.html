@@ -86,7 +86,8 @@
     }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
-	    var eventcon = document.createElementById("eventcontainer");
+	    var eventcon = document.createElement('div');
+	    eventcon.Id = "eventcontainer";
 	    var wrapper = document.createElementById("wrapper");
 	    var main = document.createElementById("main");
 	    wrapper.appendChild(main);
