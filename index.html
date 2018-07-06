@@ -30,7 +30,7 @@
 		
 		<div class="wrapper">
   <div class="main">
-	  <div class="container">
+	  <div class="container" id="eventcontainer">
 		  
 	  	<div class="row" id="eventrow">			
 		  	<div class="col">
@@ -76,6 +76,7 @@
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
 	    var eventrow = document.getElementById("eventrow");
+	    var eventcon = document.getElementById("eventcontainer");
       for(var i = 0; i < heroes.length; i++) {
         var clone = document.createElement("eventrow");
      
@@ -84,19 +85,20 @@
 	      eventname.appendChild(clone);
 	      var eventhost = document.getElementById("eventhost");
 	      eventhost.innerHTML = heroes[i].eventhost;
-	      eventname.appendChild(clone);
+	      eventhost.appendChild(clone);
 	      var eventtype = document.getElementById("eventtype");
 	      eventtype.innerHTML = heroes[i].eventtype;
-	      eventname.appendChild(clone);
+	      eventtype.appendChild(clone);
 	      var eventstart = document.getElementById("eventstart");
 	      eventstart.innerHTML = heroes[i].eventstart;
-	      eventname.appendChild(clone);
+	      eventstart.appendChild(clone);
 	      var eventtime = document.getElementById("eventtime");
 	      eventtime.innerHTML = heroes[i].eventtime;
-	      eventname.appendChild(clone);
+	      eventtime.appendChild(clone);
 	      var eventaddress = document.getElementById("eventaddress");
 	      eventaddress.innerHTML = heroes[i].eventaddress;
-	      eventname.appendChild(clone);
+	      eventaddress.appendChild(clone);
+	      eventcon.appendChild(clone);
       document.body.appendChild(clone);   
         
       }
