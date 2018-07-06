@@ -86,8 +86,6 @@
 	    wrapper.appendChild(main);
 	    main.appendChild(eventcontainer);
 	    document.body.appendChild(wrapper);   
-	    document.body.appendChild(wrapper);   
-	    document.body.appendChild(wrapper);   
       for(var i = 0; i < heroes.length; i++) {
         var clone = document.createElement("eventrow");
 	      clone.className += "col";
@@ -116,7 +114,7 @@
 	      eventaddress.innerHTML = heroes[i].eventaddress;
 	      clone.appendChild(eventaddress);
 	      
-      document.body.appendChild(clone);   
+      eventcontainer.appendChild(clone);   
         
       }
     }
