@@ -4,6 +4,9 @@
   align-items: center;
   
 }
+.labels {
+	width: 100%;
+}
 .row:before, .row:after{
       display: none;
     }
