@@ -83,21 +83,27 @@
         var eventname = document.getElementById("eventname");
 	eventname.innerHTML = heroes[i].eventname;
 	      clone.appendChild(eventname);
+	      
 	      var eventhost = document.getElementById("eventhost");
 	      eventhost.innerHTML = heroes[i].eventhost;
-	      eventhost.appendChild(clone);
+	     clone.appendChild(eventhost);
+	      
 	      var eventtype = document.getElementById("eventtype");
 	      eventtype.innerHTML = heroes[i].eventtype;
-	      eventtype.appendChild(clone);
+	     clone.appendChild(eventtype);
+	      
 	      var eventstart = document.getElementById("eventstart");
 	      eventstart.innerHTML = heroes[i].eventstart;
-	      eventstart.appendChild(clone);
+	      clone.appendChild(eventstart);
+	      
 	      var eventtime = document.getElementById("eventtime");
 	      eventtime.innerHTML = heroes[i].eventtime;
-	      eventtime.appendChild(clone);
+	      clone.appendChild(eventtime);
+	      
 	      var eventaddress = document.getElementById("eventaddress");
 	      eventaddress.innerHTML = heroes[i].eventaddress;
-	      eventaddress.appendChild(clone);
+	      clone.appendChild(eventaddress);
+	      
       document.body.appendChild(clone);   
         
       }
