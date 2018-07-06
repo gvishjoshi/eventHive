@@ -45,6 +45,11 @@
   border: 2px solid blue;
   display: flex;
 }
+.container
+{
+	 overflow: hidden;
+	display: flex;
+}	
 }
 @media only screen and (max-width: 768px) {
 .col {
