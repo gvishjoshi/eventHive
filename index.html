@@ -90,12 +90,15 @@
 	      eventname.Id = "eventname";
 	      eventname.innerHTML = heroes[i].eventname;
 	      eventinfo.appendChild(eventname);
-	      eventcol.appendChild(eventinfo);
 	      
+	      var eventcate = document.createElement('div');
+	      eventcate.className = "span";
 	      var eventhost = document.createElement('label');
 	      eventhost.Id = "eventhost";
 	      eventhost.innerHTML = heroes[i].eventhost;
-	     eventcol.appendChild(eventhost);
+	     eventcate.appendChild(eventhost);
+	      eventcol.appendChild(eventcate);
+	      
 	      
 	      var eventtype = document.createElement('label');
 	      eventtype.Id = "eventtype";
