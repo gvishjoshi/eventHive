@@ -80,19 +80,21 @@
     }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
-	    var eventcol = document.getElementById("eventcol");
-	    var eventrow = document.getElementById("eventrow");
 	    var eventcon = document.getElementById("eventcontainer");
 	    var wrapper = document.getElementById("wrapper");
 	    var main = document.getElementById("main");
 	    wrapper.appendChild(main);
-	    main.appendChild(eventcon);
+	    
 	    document.body.appendChild(wrapper);   
       for(var i = 0; i < heroes.length; i++) {
-        var clone = document.createElement("eventrow");
+	    var eventcol = document.getElementById("eventcol");
+	    var eventrow = document.getElementById("eventrow");
+        
 	      eventrow.className = "row";
 	      eventcol.className = "col";
+	      
         var eventname = document.getElementById("eventname");
+	      eventname.className	=	"span";
 	eventname.innerHTML = heroes[i].eventname;
 	      eventcol.appendChild(eventname);
 	      
@@ -118,6 +120,7 @@
 	      
 	      eventrow.appendChild(eventcol);
 	      eventcon.appendChild(eventrow);   
+	      main.appendChild(eventcon);
         
       }
     }
