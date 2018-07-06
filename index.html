@@ -77,6 +77,13 @@
       var heroes = jsonObj['eventdata']['eventdetails'];
 	    var eventrow = document.getElementById("eventrow");
 	    var eventcon = document.getElementById("eventcontainer");
+	    var wrapper = document.getElementById("wrapper");
+	    var main = document.getElementById("main");
+	    wrapper.appendChild(main);
+	    main.appendChild(eventcontainer);
+	    document.body.appendChild(wrapper);   
+	    document.body.appendChild(wrapper);   
+	    document.body.appendChild(wrapper);   
       for(var i = 0; i < heroes.length; i++) {
         var clone = document.createElement("eventrow");
 	      clone.className += "col";
