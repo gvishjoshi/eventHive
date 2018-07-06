@@ -126,10 +126,13 @@
 	      eventdttm.appendChild(eventtm);
 	      eventcol.appendChild(eventdttm);
 	      
+	      var eventad = document.createElement('div');
+	      eventad.className = "span";	
 	      var eventaddress = document.createElement('label');
 	      eventaddress.Id = "eventaddress";
 	      eventaddress.innerHTML = heroes[i].eventaddress;
-	      eventcol.appendChild(eventaddress);
+	      eventad.appendChild(eventaddress);
+	      eventcol.appendChild(eventad);
 
 	      var ticketstatus = document.createElement('a');
 	      ticketstatus.Id = "ticketstatus";
