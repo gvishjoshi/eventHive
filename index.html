@@ -91,19 +91,20 @@
 	      eventname.innerHTML = heroes[i].eventname;
 	      eventinfo.appendChild(eventname);
 	      
-	      var eventcate = document.createElement('div');
-	      eventcate.className = "span";
+	      
 	      var eventhost = document.createElement('label');
 	      eventhost.Id = "eventhost";
 	      eventhost.innerHTML = heroes[i].eventhost;
-	     eventcate.appendChild(eventhost);
-	      eventcol.appendChild(eventcate);
+	     eventinfo.appendChild(eventhost);
+	      eventcol.appendChild(eventinfo);
 	      
-	      
+	      var eventcate = document.createElement('div');
+	      eventcate.className = "span";
 	      var eventtype = document.createElement('label');
 	      eventtype.Id = "eventtype";
 	      eventtype.innerHTML = heroes[i].eventtype;
-	     eventcol.appendChild(eventtype);
+	     eventcate.appendChild(eventtype);
+	      eventcol.appendChild(eventcate);
 	      
 	      var eventstart = document.createElement('label');
 	      eventstart.Id = "eventstart";
