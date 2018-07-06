@@ -86,12 +86,13 @@
 	      
 	      var eventinfo = document.createElement('div');
 	      eventinfo.className = "span";
-	      eventinfo.className += " labels";
+	      
+	      var eventnm = document.createElement('div');
         var eventname = document.createElement('label');
 	      eventname.Id = "eventname";
 	      eventname.innerHTML = heroes[i].eventname;
-	      eventinfo.appendChild(eventname);
-	      
+	      eventnm.appendChild(eventname);
+	      eventcol.appendChild(eventnm);
 	      
 	      var eventhost = document.createElement('label');
 	      eventhost.Id = "eventhost";
