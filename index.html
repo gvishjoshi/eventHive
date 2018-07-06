@@ -114,6 +114,13 @@
 	      eventaddress.Id = "eventaddress";
 	      eventaddress.innerHTML = heroes[i].eventaddress;
 	      eventcol.appendChild(eventaddress);
+
+	      var ticketstatus = document.createElement('label');
+	      ticketstatus.Id = "ticketstatus";
+		var linkText = document.createTextNode(heroes[i].ticketstatus);
+		ticketstatus.appendChild(linkText);
+		ticketstatus.title = "Discount Offers";
+		ticketstatus.href = "discounts.html";	      
 	      
 	      eventrow.appendChild(eventcol);
 	      eventcon.appendChild(eventrow);   
