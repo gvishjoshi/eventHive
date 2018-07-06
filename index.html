@@ -112,9 +112,12 @@
 	      eventcol.className = "col";
 	    eventrow.appendChild(eventcol);
 	    
-        
-	      
-	      
+        var eventimg = document.createElement('div');
+	      eventimg.Id = "eventimg";
+		eventimg.className = "link";
+	      var content = '<img src="Desert.jpg" alt="Mounytain View">';
+		     eventimg.innerHTML = content; 
+	      eventcol.appendChild(eventimg);
 	      
         var eventname = document.createElement('label');
 	      eventname.Id = "eventname";
