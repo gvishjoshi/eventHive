@@ -86,42 +86,64 @@
     }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
-	    var eventcon = document.createElement('div');
-	    eventcon.Id = "eventcontainer";
-	    var wrapper = document.createElementById("wrapper");
-	    var main = document.createElementById("main");
-	    wrapper.appendChild(main);
+
+	    	var wrapper = document.createElement('div');
+	    	wrapper.Id = "wrapper";
+ 		document.body.appendChild(wrapper);   	    
+
+	    	var main = document.createElement('div');
+	    	main.id = "main";
+	        wrapper.appendChild(main);
 	    
-	    document.body.appendChild(wrapper);   
+	    	var eventcon = document.createElement('div');
+	    	eventcon.Id = "eventcontainer";
+	   	main.appendChild(eventcon);
+
+	    
+	   
       for(var i = 0; i < heroes.length; i++) {
-	    var eventcol = document.createElementById("eventcol");
-	    var eventrow = document.createElementById("eventrow");
-        
+	      var eventrow = document.createElement('div');
+	      eventrow.Id = "eventrow";	   
 	      eventrow.className = "row";
-	      eventcol.className = "col";
+	      eventcon.appendChild(eventrow);
 	      
-        var eventname = document.createElementById("eventname");
+	    var eventcol = document.createElement('div');
+	    eventcol.Id = "eventcol";
+	      eventcol.className = "col";
+	    eventrow.appendchild(eventcol);
+	    
+        
+	      
+	      
+	      
+        var eventname = document.createElement('label');
+	      eventname.Id = "eventname";
 	      eventname.className	=	"span";
-	eventname.innerHTML = heroes[i].eventname;
+		eventname.innerHTML = heroes[i].eventname;
 	      eventcol.appendChild(eventname);
 	      
-	      var eventhost = document.createElementById("eventhost");
+	      var eventhost = document.createElemen('label');
+	      eventhost.Id = "eventhost";
 	      eventhost.innerHTML = heroes[i].eventhost;
 	     eventcol.appendChild(eventhost);
 	      
-	      var eventtype = document.createElementById("eventtype");
+	      var eventtype = document.createElement('label');
+	      eventtype.Id = "eventtype";
 	      eventtype.innerHTML = heroes[i].eventtype;
 	     eventcol.appendChild(eventtype);
 	      
-	      var eventstart = document.createElementById("eventstart");
+	      var eventstart = document.createElement('label');
+	      eventstart.Id = "eventstart";
 	      eventstart.innerHTML = heroes[i].eventstart;
 	      eventcol.appendChild(eventstart);
 	      
-	      var eventtime = document.createElementById("eventtime");
+	      var eventtime = document.createElement('label');
+	      eventtime.Id = "eventtime";
 	      eventtime.innerHTML = heroes[i].eventtime;
 	      eventcol.appendChild(eventtime);
 	      
-	      var eventaddress = document.createElementById("eventaddress");
+	      var eventaddress = document.createElement('label');
+	      eventaddress.Id = "eventaddress";
 	      eventaddress.innerHTML = heroes[i].eventaddress;
 	      eventcol.appendChild(eventaddress);
 	      
