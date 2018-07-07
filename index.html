@@ -64,14 +64,14 @@
 	    eventcon.className = "container";
 	   	main.appendChild(eventcon);
 
-*/	    
-	   
-      for(var i = 0; i < heroes.length; i++) {
-	      var eventrow = document.createElement('div');
+*/	    	      var eventrow = document.createElement('div');
 	      eventrow.Id = "eventrow";	   
 	      eventrow.className = "row";
 //	      eventcon.appendChild(eventrow);
 	      main.appendChild(eventrow);
+	   
+      for(var i = 0; i < heroes.length; i++) {
+
 	      
 	    var eventcol = document.createElement('div');
 	    eventcol.Id = "eventcol";
@@ -147,8 +147,7 @@
 		bookbutton.setAttribute("type", "submit");
 		bookbutton.value	=	'Book Tickets';
 	       eventcol.appendChild(bookbutton);
-	      eventrow.appendChild(eventcol);
-	      main.appendChild(eventrow);   
+	      
 //	      main.appendChild(eventcon);
         
       }
