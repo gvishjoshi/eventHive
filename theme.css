@@ -69,6 +69,7 @@
   text-align: center;
 }
 
+.aside { flex: 1 auto; }
 .aside-1 {
   background: gold;
 	padding-top: 100px;
