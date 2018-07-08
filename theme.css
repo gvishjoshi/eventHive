@@ -75,14 +75,14 @@ margin: 50px;
   text-align: center;
 }
 
-.aside { display:flex; height: auto; }
 .aside-1 {
   background: gold;
-	padding-top: 100px;
+	height: 30px;
 }
 
 .aside-2 {
   background: hotpink;
+height: 30px;
 }
 [class*="col-"] {
     width: 100%;
