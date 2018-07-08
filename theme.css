@@ -73,7 +73,7 @@ margin: 50px;
   text-align: center;
 }
 
-.aside { flex: 1 auto; }
+.aside { display:flex; }
 .aside-1 {
   background: gold;
 	padding-top: 100px;
