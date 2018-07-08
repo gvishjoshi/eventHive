@@ -43,6 +43,11 @@
     }
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
+
+	    	    var aside1 = document.createElement('div');
+	    	aside1.Id = "aside-1";
+	 	    aside1.className = " aside-1";
+ 		document.body.appendChild(aside1);
 	    
 	    	var wrapper = document.createElement('div');
 	    	wrapper.Id = "wrapper";
@@ -54,13 +59,7 @@
 	    main.className = "main";
 	        wrapper.appendChild(main);
 	    
-	    	    var aside1 = document.createElement('div');
-	    	aside1.Id = "aside-1";
-	    aside1.className = "aside";
-	    aside1.className += " aside-1";
- 		wrapper.appendChild(aside1);
-	    
-	    
+    
 /*    	var eventcon = document.createElement('div');
 	    	eventcon.Id = "container";
 	    eventcon.className = "container";
