@@ -49,6 +49,9 @@ border: 1px solid ;
   width:100%;
   object-fit: cover;
 }
+.span {
+	margin: 10px;
+}
 .wrapper {
   display: flex;  
   flex-flow: row wrap;
