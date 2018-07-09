@@ -28,15 +28,19 @@
 </nav>
 	</header>	
 	<body>	
-		<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+		 <input id="tab1" type="radio" name="tabs" checked>
+  <label for="tab1">Codepen</label>
+    
+  <input id="tab2" type="radio" name="tabs">
+  <label for="tab2">Dribbble</label>
+    
+  <input id="tab3" type="radio" name="tabs">
+  <label for="tab3">Dropbox</label>
+    
+  <input id="tab4" type="radio" name="tabs">
+  <label for="tab4">Drupal</label>
+
+		
 <script>
     var requestURL = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/eventdata.json';
     var request = new XMLHttpRequest();
