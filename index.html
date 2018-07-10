@@ -300,6 +300,11 @@ function init() {
       // Stop the browser following the link
       return false;
     }	
+function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }	
     </script>
 <!--		
   <aside class="aside aside-2">Aside 2</aside>
