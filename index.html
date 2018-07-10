@@ -305,6 +305,10 @@ function getFirstChildWithTagName( element, tagName ) {
         if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
       }
     }	
+function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }	
     </script>
 <!--		
   <aside class="aside aside-2">Aside 2</aside>
