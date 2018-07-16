@@ -31,7 +31,7 @@
 	</header>	
 
 	<body onload="init()">	
-		<div class="tabs">
+		<div class="categories">
 		 <input id="tab1" type="radio" name="tabs" checked>
   <label for="tab1">MAIN</label>
     
@@ -249,9 +249,9 @@ var tabLinks = new Array();
 
     }
       // Grab the tab links and content divs from the page
-      var tabListItems = document.getElementById('tabs').childNodes;
+      var tabListItems = document.getElementById('wrapper').childNodes;
       for ( var i = 0; i < tabListItems.length; i++ ) {
-        if ( tabListItems[i].nodeName == "LI" ) {
+        if ( tabListItems[i].nodeName == "DIV" ) {
           var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
           var id = getHash( tabLink.getAttribute('href') );
           tabLinks[id] = tabLink;
