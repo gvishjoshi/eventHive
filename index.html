@@ -246,7 +246,7 @@ var tabLinks = new Array();
       var superHeroesText = request.response;
       var superHeroes = JSON.parse(superHeroesText);
       showHeroes(superHeroes); 
-
+}
    
       // Grab the tab links and content divs from the page
 	    var c = document.body.childNodes;
@@ -278,7 +278,7 @@ var tabLinks = new Array();
         if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
         i++;
       }
-	     }
+	     
     }	
     function showTab() {
       var selectedId = getHash( this.getAttribute('href') );
