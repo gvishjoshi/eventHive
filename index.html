@@ -49,19 +49,7 @@
 		</div>
 		
 <script>
-	var tabLinks = new Array();
-    var contentDivs = new Array();
-    var requestURL = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/eventdata.json';
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'text';
-    request.send();
-    request.onload = function() {
-      var superHeroesText = request.response;
-      var superHeroes = JSON.parse(superHeroesText);
-/*      showHeroes(superHeroes); 
-*/
-    }
+	
     function showHeroes(jsonObj) {
       var heroes = jsonObj['eventdata']['eventdetails'];
 
@@ -247,7 +235,19 @@ new Tabs('.tab-link', {
     new Tabs(tabLink.hash + ' .tab-inner_link');
 });
 function init() {
+var tabLinks = new Array();
+    var contentDivs = new Array();
+    var requestURL = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/eventdata.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'text';
+    request.send();
+    request.onload = function() {
+      var superHeroesText = request.response;
+      var superHeroes = JSON.parse(superHeroesText);
+      showHeroes(superHeroes); 
 
+    }
       // Grab the tab links and content divs from the page
       var tabListItems = document.getElementById('tabs').childNodes;
       for ( var i = 0; i < tabListItems.length; i++ ) {
