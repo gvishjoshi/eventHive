@@ -250,7 +250,7 @@ var tabLinks = new Array();
    
       // Grab the tab links and content divs from the page
 	    var c = document.body.childNodes;
-      var tabListItems = document.getElementById("wrapper");
+      var tabListItems = document.getElementById("categories");
       for ( var i = 0; i < tabListItems.length; i++ ) {
         if ( tabListItems[i].nodeName == "DIV" ) {
           var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
