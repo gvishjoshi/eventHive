@@ -249,6 +249,7 @@ var tabLinks = new Array();
 
    
       // Grab the tab links and content divs from the page
+	    var c = document.body.childNodes;
       var tabListItems = document.getElementById("wrapper").childNodes;
       for ( var i = 0; i < tabListItems.length; i++ ) {
         if ( tabListItems[i].nodeName == "DIV" ) {
