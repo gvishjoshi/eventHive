@@ -238,8 +238,12 @@ function init() {
 /* Get today's date */
 var IDs = getmonth();
 for (i = 0; i < IDs.length; i++) { 
+var str = '<ul>';
+   str += '<li><a href="#">IDs[i].value</a></li>';
+str += '</ul>';
 
-
+$('body').append(str);
+}
 /* Build unordered list of tabs */	
 /*	
 var tabLinks = new Array();
