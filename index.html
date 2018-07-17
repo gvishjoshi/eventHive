@@ -236,7 +236,10 @@ new Tabs('.tab-link', {
 });
 function init() {
 /* Get today's date */
-getmonth();
+var IDs = getmonth();
+for (i = 0; i < IDs.length; i++) { 
+
+
 /* Build unordered list of tabs */	
 /*	
 var tabLinks = new Array();
