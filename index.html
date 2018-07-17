@@ -318,7 +318,20 @@ month[8] = "SEP";
 month[9] = "OCT";
 month[10] = "NOV";
 month[11] = "DEC";
-var n = month[d.getMonth()];
+
+var i;
+	var mth = d.getMonth();
+var IDs = new Object();	
+for (i = 0; i < 3; i++) { 
+IDs[i] = month[mth];
+	mth = mth - 1;
+if (mth == -1) {
+    mth = 0;
+}	
+}	
+
+        
+    return IDs;
 	
 }
 function getFirstChildWithTagName( element, tagName ) {
