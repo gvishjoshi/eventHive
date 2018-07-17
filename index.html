@@ -235,6 +235,10 @@ new Tabs('.tab-link', {
     new Tabs(tabLink.hash + ' .tab-inner_link');
 });
 function init() {
+/* Get today's date */
+getmonth();
+/* Build unordered list of tabs */	
+/*	
 var tabLinks = new Array();
     var contentDivs = new Array();
     var requestURL = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/eventdata.json';
@@ -246,6 +250,7 @@ var tabLinks = new Array();
       var superHeroesText = request.response;
       var superHeroes = JSON.parse(superHeroesText);
       showHeroes(superHeroes); 
+*/      
 }
    
       // Grab the tab links and content divs from the page
@@ -298,6 +303,24 @@ var tabLinks = new Array();
       // Stop the browser following the link
       return false;
     }	
+function getmonth(){
+var d = new Date();
+var month = new Array();
+month[0] = "JAN";
+month[1] = "FEB";
+month[2] = "MAR";
+month[3] = "APR";
+month[4] = "MAY";
+month[5] = "JUN";
+month[6] = "JUL";
+month[7] = "AUG";
+month[8] = "SEP";
+month[9] = "OCT";
+month[10] = "NOV";
+month[11] = "DEC";
+var n = month[d.getMonth()];
+	
+}
 function getFirstChildWithTagName( element, tagName ) {
       for ( var i = 0; i < element.childNodes.length; i++ ) {
         if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
