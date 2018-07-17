@@ -181,7 +181,8 @@
 function init() {
 /* Get today's date */
 var IDs = getmonth();
-for (i = 0; i < IDs.length; i++) { 
+var mths = IDs.length;	
+for (i = 0; i < mths; i++) { 
 var str = '<ul class="categories">';
    str += '<li><a href="#">IDs[i].value</a></li>';
 str += '</ul>';
