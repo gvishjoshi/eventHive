@@ -174,67 +174,6 @@
  		document.body.appendChild(footer);   
 	    
     }
-function Tabs(selector, options) {
-    if (!(this instanceof Tabs)) return new Tabs(selector, options);
-
-    selector = selector + '' === selector ? selector : 'a[href^="#tab"]';
-    options = options && options.hasOwnProperty ? options : {};
-
-    this.options = {};
-
-    var item;
-    for (item in this.defaults) this.options[item] = (
-        options[item] === undefined ? this.defaults[item] : options[item]
-    );
-
-    var links = document.querySelectorAll(selector);
-    for (var i = 0; links[i]; i++) {
-        this[this.push(links[i]) - 1].addEventListener('click', this);
-    }
-
-    if (this[this.options.activeTab || 0]) {
-        this[this.options.activeTab || 0].click();
-    }
-}
-Tabs.prototype = [];
-Tabs.prototype.defaults = {
-    contentActive: 'active',
-    linkActive: 'active',
-    allowClose: false,
-    activeTab: 0
-};
-Tabs.prototype.options = {};
-Tabs.prototype.latest = null;
-Tabs.prototype.handleEvent = function(event, content) {
-    event.preventDefault();
-
-    if (this.latest) {
-        this.latest.classList.remove(this.options.linkActive);
-        if (content = document.querySelector(this.latest.hash)) {
-            content.classList.remove(this.options.contentActive);
-        }
-    }
-
-    if (this.latest === event.target && this.options.allowClose) {
-        this.latest = null;
-        return;
-    }
-
-    this.latest = event.target;
-    this.latest.classList.add(this.options.linkActive);
-    if (content = document.querySelector(this.latest.hash)) {
-        content.classList.add(this.options.contentActive);
-    }
-};
-
-/* Multi-level example with closeable tabs */
-new Tabs('.tab-link', {
-    contentActive: 'alive',
-    allowClose: true,
-    activeTab: 2
-}).forEach(function(tabLink) {
-    new Tabs(tabLink.hash + ' .tab-inner_link');
-});
 function init() {
 /* Get today's date */
 var IDs = getmonth();
