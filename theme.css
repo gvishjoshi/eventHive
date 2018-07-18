@@ -97,6 +97,7 @@ input:checked + label {
 }
 .span {
 	margin: 10px;
+	text-align: center;
 }
 .wrapper {
   display: flex;  
