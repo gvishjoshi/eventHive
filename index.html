@@ -190,8 +190,9 @@ for (i = 0; i < 3; i++) {
    str += '<li><a href="#">' + IDs[i] + '</a></li>';
 }
 str += '</ul>';
-$('str').appendTo('tabstr');	
-$('tabstr').append('body');	
+$('tabstr').append('str');	
+$('body').append('tabstr');	
+
 
 
 /* Build unordered list of tabs */	
