@@ -184,12 +184,13 @@ function init() {
 var IDs;
 	IDs = getmonth();
 var tabstr = '<div class="tabs">';
-
-for (i = 0; i < 3; i++) { 
 var str = '<ul class="tab-links">';
+for (i = 0; i < 3; i++) { 
+
    str += '<li><a href="#">' + IDs[i] + '</a></li>';
+}
 str += '</ul>';
-$(tabstr).append(str);	
+$('tabstr').append(str);	
 $('body').append(tabstr);	
 
 }
