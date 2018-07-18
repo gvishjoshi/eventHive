@@ -138,13 +138,15 @@
 	      eventaddress.innerHTML = heroes[i].eventaddress;
 	      eventad.appendChild(eventaddress);
 	      eventcol.appendChild(eventad);
-
+	
+	      var ticketst = document.createElement('div');
 	      var ticketstatus = document.createElement('a');
 	      ticketstatus.Id = "ticketstatus";
 	       ticketstatus.className = "span";
 		ticketstatus.textContent = heroes[i].ticketstatus;
 	      ticketstatus.href = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/discounts.html';
-	      eventcol.appendChild(ticketstatus);
+	      ticketst.appendChild(ticketstatus);
+	      eventcol.appendChild(ticketst);
 
 	      var bookbutton = document.createElement("INPUT");
 	      bookbutton.Id = "bookbutton";
