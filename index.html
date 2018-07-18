@@ -146,14 +146,14 @@
 		ticketstatus.textContent = heroes[i].ticketstatus;
 	      ticketstatus.href = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/discounts.html';
 	      ticketst.appendChild(ticketstatus);
-	      eventcol.appendChild(ticketst);
 
 	      var bookbutton = document.createElement("INPUT");
 	      bookbutton.Id = "bookbutton";
 	      bookbutton.className ="wisteria-flat-button" 
 		bookbutton.setAttribute("type", "submit");
 		bookbutton.value	=	'Book Tickets';
-	       eventcol.appendChild(bookbutton);
+	      ticketst.appendChild(bookbutton);
+	       eventcol.appendChild(ticketst);
 	      
 document.getElementById('Home').appendChild(eventrow);
         
