@@ -180,9 +180,29 @@
     }
 */
 function init() {
-/* Get today's date */
+    var e = document.createElement("div");
+	e.Id = "TabMenu";
+    TabMenu.className = "tabs";
+document.body.appendChild(e);	
 var IDs;
-	IDs = getmonth();
+	IDs = getmonth();	
+var node = document.createElement("ul");	
+for (var i=0; i<3; i++){
+
+    var li=document.createElement('li');
+
+    node.appendChild(li);
+    li.innerHTML=li.innerHTML + IDs[i];
+
+}	
+  /*
+  var link = document.createElement("link");
+  link.setAttribute('href', '#');
+  link.setAttribute('name', 'link');
+  node.appendChild(link);
+  el.appendChild(node);	
+ Get today's date 
+
 var tabstr = '<div class="tabs">';
 $('body').append(tabstr);		
 var str = '<ul class="tab-links">';
@@ -192,7 +212,7 @@ for (i = 0; i < 3; i++) {
 }
 str += '</ul>';
 $('tabstr').append(str);	
-
+*/
 
 
 
