@@ -183,15 +183,15 @@ function init() {
 /* Get today's date */
 var IDs;
 	IDs = getmonth();
-var str = '<div class="tabs">';
-$('body').append(str);	
+var tabstr = '<div class="tabs">';
+
 for (i = 0; i < 3; i++) { 
-str = '<ul class="tab-links">';
+var str = '<ul class="tab-links">';
    str += '<li><a href="#">' + IDs[i] + '</a></li>';
 str += '</ul>';
-$('body').append(str);	
-str = '</div>';
-$('body').append(str);
+$(tabstr).append(str);	
+$('body').append(tabstr);	
+
 }
 /* Build unordered list of tabs */	
 /*	
