@@ -17,7 +17,7 @@
 	<body onload="init();">	
 
 <!-- Tab links -->
-<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">All Events</button>
 <button class="tablink" onclick="openPage('News', this, 'green')" >News</button>
 <button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
 <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
@@ -170,53 +170,6 @@
     }
 */
 function init() {
-    var e = document.createElement('div');
-	e.Id = 'TabMenu';
-    e.className = 'tabs';
-
-var IDs;
-	IDs = getmonth();	
-var node = document.createElement("ul");	
-	node.className = 'tab-links';
-for (var i=0; i<3; i++){
-
-    var li=document.createElement('li');
-	li.classNAme = 'tab-links';
-var aTag = document.createElement('a');
-aTag.setAttribute('href','#tab1');
-aTag.innerHTML = IDs[i];
-li.appendChild(aTag);
-	
-    node.appendChild(li);
-/*    li.innerHTML=li.innerHTML + IDs[i]; */
-
-}	
-e.appendChild(node);
-document.body.appendChild(e);	
-		
-  /*
-  var link = document.createElement("link");
-  link.setAttribute('href', '#');
-  link.setAttribute('name', 'link');
-  node.appendChild(link);
-  el.appendChild(node);	
- Get today's date 
-
-var tabstr = '<div class="tabs">';
-$('body').append(tabstr);		
-var str = '<ul class="tab-links">';
-for (i = 0; i < 3; i++) { 
-
-   str += '<li><a href="#">' + IDs[i] + '</a></li>';
-}
-str += '</ul>';
-$('tabstr').append(str);	
-*/
-
-
-
-/* Build unordered list of tabs */	
-/*	
 var tabLinks = new Array();
     var contentDivs = new Array();
     var requestURL = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/eventdata.json';
@@ -228,55 +181,10 @@ var tabLinks = new Array();
       var superHeroesText = request.response;
       var superHeroes = JSON.parse(superHeroesText);
       showHeroes(superHeroes); 
-*/      
-}
-/*   
-      // Grab the tab links and content divs from the page
-	    var c = document.body.childNodes;
-      var tabListItems = document.getElementById("wrapper");
-      for ( var i = 0; i < tabListItems.length; i++ ) {
-        if ( tabListItems[i].nodeName == "DIV" ) {
-          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
-          var id = getHash( tabLink.getAttribute('href') );
-          tabLinks[id] = tabLink;
-          contentDivs[id] = document.getElementById( id );
-        }
-      }
+}	
 
-      // Assign onclick events to the tab links, and
-      // highlight the first tab
-      var i = 0;
 
-      for ( var id in tabLinks ) {
-        tabLinks[id].onclick = showTab;
-        tabLinks[id].onfocus = function() { this.blur() };
-        if ( i == 0 ) tabLinks[id].className = 'selected';
-        i++;
-      }
 
-      // Hide all content divs except the first
-      var i = 0;
-
-      for ( var id in contentDivs ) {
-        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
-        i++;
-      }
-	     
-    }	
-    function showTab() {
-      var selectedId = getHash( this.getAttribute('href') );
-
-      // Highlight the selected tab, and dim all others.
-      // Also show the selected content div, and hide all others.
-      for ( var id in contentDivs ) {
-        if ( id == selectedId ) {
-          tabLinks[id].className = 'selected';
-          contentDivs[id].className = 'tabContent';
-        } else {
-          tabLinks[id].className = '';
-          contentDivs[id].className = 'tabContent hide';
-        }
-      }
 
       // Stop the browser following the link
       return false;
