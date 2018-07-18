@@ -191,8 +191,11 @@ for (var i=0; i<3; i++){
 
     var li=document.createElement('li');
 	li.classNAme = 'tab-links';
-	li.setAttribute('href', '#tab1');
-
+var aTag = document.createElement('a');
+aTag.setAttribute('href','#tab1');
+aTag.innerHTML = "link text";
+li.appendChild(aTag);
+	
     node.appendChild(li);
     li.innerHTML=li.innerHTML + IDs[i];
 
