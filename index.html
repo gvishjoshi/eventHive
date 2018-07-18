@@ -147,13 +147,14 @@
 	      ticketstatus.href = 'https://raw.githubusercontent.com/gvishjoshi/eventHive/master/discounts.html';
 	      ticketst.appendChild(ticketstatus);
 
+	      var bookbt = document.createElement('div');
 	      var bookbutton = document.createElement("INPUT");
 	      bookbutton.Id = "bookbutton";
 	      bookbutton.className ="wisteria-flat-button" 
 		bookbutton.setAttribute("type", "submit");
 		bookbutton.value	=	'Book Tickets';
-	      ticketst.appendChild(bookbutton);
-	       eventcol.appendChild(ticketst);
+	      bookbt.appendChild(bookbutton);
+	       eventcol.appendChild(bookbt);
 	      
 document.getElementById('Home').appendChild(eventrow);
         
