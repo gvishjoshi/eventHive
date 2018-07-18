@@ -263,7 +263,7 @@ li {
 }
 
 /*----- Tab Links -----*/
-/* Clearfix */
+/* Clearfix  */
 	.tab-links:after {
 	display:block;
 	clear:both;
