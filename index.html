@@ -183,7 +183,7 @@ function init() {
     var e = document.createElement('div');
 	e.Id = 'TabMenu';
     e.className = 'tabs';
-document.body.appendChild(e);	
+
 var IDs;
 	IDs = getmonth();	
 var node = document.createElement("ul");	
@@ -196,7 +196,7 @@ for (var i=0; i<3; i++){
 
 }	
 e.appendChild(node);
-
+document.body.appendChild(e);	
   /*
   var link = document.createElement("link");
   link.setAttribute('href', '#');
