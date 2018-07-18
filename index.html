@@ -102,17 +102,16 @@
 	      eventhost.Id = "eventhost";
 	      eventhost.innerHTML = heroes[i].eventhost;
 	     eventnm.appendChild(eventhost);
+
+	      var eventtype = document.createElement('label');
+	      eventtype.Id = "eventtype";
+	      eventtype.innerHTML = heroes[i].eventtype;
+	     eventnm.appendChild((eventtype);
 	      
 	      eventinfo.appendChild(eventnm);
 	      
 	      eventcol.appendChild(eventinfo);
 	      
-	      var eventcate = document.createElement('div');
-	      eventcate.className = "span";
-	      var eventtype = document.createElement('label');
-	      eventtype.Id = "eventtype";
-	      eventtype.innerHTML = heroes[i].eventtype;
-	     eventcate.appendChild(eventtype);
 	      eventcol.appendChild(eventcate);
 	      
 		var eventdttm = document.createElement('div');
