@@ -111,7 +111,7 @@ input:checked + label {
 }
 
 .header {
-  background: tomato;
+  background: cadetblue;
 	position:absolute;
 	width:100%;
 	height:70px;
