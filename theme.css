@@ -3,7 +3,7 @@
   flex-wrap: wrap;
 }
 .row .col {
-  flex: 1 0 25%;
+  flex: 1 0 15%;
   box-sizing: border-box;
 border: 1px solid ;
   background: #e0ddd5;
