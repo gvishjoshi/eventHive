@@ -114,7 +114,7 @@ input:checked + label {
   background: tomato;
 	position:absolute;
 	width:100%;
-	height:30px;
+	height:70px;
 }
 
 .footer {
