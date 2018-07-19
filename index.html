@@ -151,7 +151,7 @@
 	      bookbutton.Id = "bookbutton";
 	      bookbutton.className ="wisteria-flat-button" 
 	      bookbutton.innerHTML	=	'Book Tickets'; 
-	       bookbutton.onclick = 'window.location.href = '../tickets.html';
+	       bookbutton.onclick = openTickets();
 	       ticketst.appendChild(bookbutton);
 	       eventcol.appendChild(ticketst);
 	      
@@ -160,7 +160,8 @@ document.getElementById('Home').appendChild(eventrow);
       }
     
     }
-
+function openTickets() {
+}
 function init() {
 var tabLinks = new Array();
     var contentDivs = new Array();
