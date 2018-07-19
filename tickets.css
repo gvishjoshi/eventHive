@@ -1,3 +1,57 @@
+#logo{
+
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 40px;
+	background: url(../eventhive.png) no-repeat center;
+	background-size: contain;
+	display: block;
+
+}
+
+nav {
+
+	float: right;
+	padding: 20px;	
+
+}
+
+#menu-icon {
+
+	width: 27px;
+	height: 22px;
+	background: url(../menu.png) center;
+background-size: contain;
+}
+
+a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+ul {
+
+	list-style: none;
+
+}
+
+li {
+
+	display: inline-block;
+	float: left;
+	padding: 10px
+
+}
+
+.current {
+
+	color: #2262AD;
+
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
