@@ -123,6 +123,7 @@ margin: 20px;
 .footer {
   background: lightgreen;
 	height:30px;
+		width: 100%;
 }
 
 .main {
@@ -132,11 +133,13 @@ margin: 20px;
 .aside-1 {
   background: gold;
 	height: 30px;
+	width: 100%;
 }
 
 .aside-2 {
   background: hotpink;
 height: 30px;
+		width: 100%;
 }
 [class*="col-"] {
     width: 100%;
