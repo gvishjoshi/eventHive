@@ -52,3 +52,38 @@ margin: 20px;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+	padding-top:100px;
+}
+
+.header {
+  background: tomato;
+	position:absolute;
+	width:99%;
+}
+
+.footer {
+  background: lightgreen;
+	height:30px;
+}
+
+.main {
+  text-align: center;
+}
+
+.aside-1 {
+  background: gold;
+	height: 30px;
+}
+
+.aside-2 {
+  background: hotpink;
+height: 30px;
+}
+[class*="col-"] {
+    width: 100%;
+}
