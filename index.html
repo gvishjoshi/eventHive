@@ -170,7 +170,7 @@
 	      bookbutton.className ="wisteria-flat-button" 
 	      bookbutton.innerHTML	=	'Book Tickets'; 
 	      bookbutton.addEventListener("click", openTickets);
-	       bookbutton.setAttribute = ('onclick', 'openTickets(' + i + ')');
+	       bookbutton.setAttribute = ('onclick', 'openTickets(' + heroes[i].eventId + ')');
 	      
 	       ticketst.appendChild(bookbutton);
 	       eventcol.appendChild(ticketst);
