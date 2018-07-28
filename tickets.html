@@ -130,6 +130,84 @@
 				</div>
 					</div>	  
 	</div>
+		  	<div class="col">
+				<span>
+	<form id="tickets" name="tickets" netlify onsubmit="return validateForm()" method="POST" >
+		<div class="row">
+				<div class="col">
+						<b>Email:</b>
+			</div>
+			<div class="col">
+							<input type="text" maxlength="72" id="emailId" name="RequestEmail" required/>
+				</div>
+		</div>
+				<div class="row">
+					<div class="col">
+						<b>Name:</b>
+					</div>
+					<div class="col">
+						<input type="text" maxlength="72" id="name" name="RequestName" required/>
+					</div>
+				</div>
+		
+				<div class="row">
+					<div class="col">
+						Adults
+					</div>
+					<div class="col">
+						<select id="adultnumber" name="adultnumber" onchange="getTotal();">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+						</select></div>
+					<div class="col">
+					X £15
+					</div>
+					<div class="col">
+						<label id="adultprice"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						Kids
+					</div>
+					<div class="col">
+						<select id="kidsnumber" name="kidsnumber" onchange="getTotal();">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+						</select></div>
+					<div class="col">
+					X £10
+					</div>
+					<div class="col">
+						<label id="kidsprice"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						To Pay
+					</div>
+					<div class="col"><label id="totalTickets"></label></div>
+						
+					<div class="col">
+						<div><label>tickets</label></div>
+					</div>
+					<div class="col">
+						<div><label id="cakePrice"/></div>
+					</div>
+				</div>
+				<div class="row">					
+					<div class="span col">
+						<input type="submit" value="Submit" class="wisteria-flat-button"/>
+<!--						<button type="submit" value="Submit">Submit</button> -->
+					</div>
+				</div>
+					</form>		</span>
+		</div>
+	
 	</div>
     <aside class="aside aside-2">Aside 2</aside>
   <footer class="footer">Footer</footer>
