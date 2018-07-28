@@ -57,13 +57,13 @@ li {
   flex-wrap: wrap;
 }
 .row .col {
-  flex: 1 0 10%;
+  flex: 1 0 15%;
   box-sizing: border-box;
 border: 1px solid ;
   background: #e0ddd5;
   color: #171e42;
   padding: 10px;
-margin: 20px;
+margin: 10px;
 }
 .span {
 	margin: 10px;
