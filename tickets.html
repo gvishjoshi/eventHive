@@ -35,23 +35,23 @@
 		  	<div class="col">
 				<span>
 	<form id="tickets" name="tickets" netlify onsubmit="return validateForm()" method="POST" >
-		<div class="row">
 		<div class="col">
 				
 						<b>Email:</b>
-			
+			</div>
+			<div class="col">
 							<input type="text" maxlength="72" id="emailId" name="RequestEmail" required/>
 				</div>
 		</div>
-				
+				<div class="row">
 					<div class="col">
 						<b>Name:</b>
 					</div>
-					<div class="col">
+					
 						<input type="text" maxlength="72" id="name" name="RequestName" required/>
 				
 				</div>
-		</div>
+		
 				<div class="row">
 					<div class="col">
 						Adults
@@ -226,7 +226,6 @@ function validateForm() {
         return false;
     }
 }
-
 	function getTotal()
 {
     //Here we get the total price by calling our function
@@ -241,7 +240,6 @@ function validateForm() {
                                       "£"+adultprice;	
 		document.getElementById('kidsprice').innerHTML =
                                       "£"+kidsprice;	
-
 document.getElementById('totalTickets').innerHTML =
                                       totalTickets;	
  document.getElementById('cakePrice').innerHTML =
