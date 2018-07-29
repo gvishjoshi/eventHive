@@ -11,15 +11,6 @@ border: 1px solid ;
   padding: 15px;
 margin: 12px;
 }
-.row .colen {
-  
-  box-sizing: border-box;
-border: 1px solid ;
-  background: #e0ddd5;
-  color: #171e42;
-  padding: 15px;
-margin: 12px;
-}
 
 input {
   display: none;
