@@ -29,9 +29,7 @@ body, html {
   display: none;
   padding: 35px 20px;
 }
-.tabs {
-  margin-top: 70px;
-}
+
 #Home {background-color: red;}
 #News {background-color: green;}
 #Contact {background-color: blue;}
