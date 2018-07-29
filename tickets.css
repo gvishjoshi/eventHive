@@ -64,6 +64,14 @@ border: 1px solid ;
   color: #171e42;
 margin: 10px;
 }
+.row .colnb {
+  flex: 1 0 15%;
+  box-sizing: border-box;
+  background: #e0ddd5;
+  color: #171e42;
+margin: 10px;
+}
+
 .span {
 	margin: 10px;
 	text-align: center;
