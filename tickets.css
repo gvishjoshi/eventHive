@@ -126,7 +126,7 @@ margin: 10px;
 .wrapper {
   display: flex;  
   flex-flow: row wrap;
-  font-weight: bold;
+  font-weight: 200;
   text-align: center;
 	padding-top:70px;
 }
