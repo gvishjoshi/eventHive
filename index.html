@@ -165,6 +165,7 @@
 	      var bookbutton = document.createElement('button');
 	      bookbutton.Id = heroes[i].eventId;
 	      bookbutton.className ="wisteria-flat-button" 
+	      bookbutton.className += " span";
 	      bookbutton.innerHTML	=	'Book Tickets'; 
 	      bookbutton.addEventListener("click", openTickets);
 	       bookbutton.setAttribute = ('onclick', 'openTickets()');
