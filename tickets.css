@@ -77,6 +77,16 @@ margin: 10px;
   box-sizing: border-box;
 margin: 10px;
 }
+.row .colnb-1 {
+  flex: 30%;
+  box-sizing: border-box;
+margin: 10px;
+}
+.row .colnb-2 {
+  flex: 1 auto;
+  box-sizing: border-box;
+margin: 10px;
+}
 .row .colnbbutton {
   flex: 1 0 15%;
   box-sizing: border-box;
