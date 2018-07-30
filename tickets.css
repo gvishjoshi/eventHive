@@ -45,7 +45,9 @@ li {
 	padding: 10px
 
 }
-
+.label {
+	width:100%;
+}
 .current {
 
 	color: #2262AD;
