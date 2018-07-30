@@ -57,6 +57,12 @@ li {
 .row {
   display: flex;
   flex-wrap: wrap;
+margin: 20px;
+}
+.rowevent {
+  display: flex;
+  flex-wrap: wrap;
+margin: 5px;
 }
 .row .col {
   flex: 1 0 15%;
